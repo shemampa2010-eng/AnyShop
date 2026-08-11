@@ -637,11 +637,13 @@ let clothes = [
   }
 ]
 
-let products = document.getElementById("products");
+let productsContainer = document.getElementById("products");
 
-products.innerHTML = `
-    <img src="${clothes[0].images[0]}" width="200">
-    <h2>${clothes[0].title}</h2>
-    <p>$${clothes[0].price}</p>
-    
-`;
+clothes.forEach(function(product) {
+    productsContainer.innerHTML += `
+        <img src="${product.images[0]}" width="200">
+        <h2>${product.title}</h2>
+        <p>$${product.price}</p>
+    `;
+});
+
