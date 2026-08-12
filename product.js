@@ -646,7 +646,6 @@ let product = clothes.find(function(product) {
     return product.id == id;
 });
 
-console.log(product);
 
 let productContainer = document.getElementById("product");
 
@@ -659,14 +658,14 @@ productContainer.innerHTML = `
 
     <h3>Choose your size</h3>
 
-    <div class="sizes">
-        <button>S</button>
-        <button>M</button>
-        <button>L</button>
-        <button>XL</button>
-    </div>
+    <div class="sizes"></div>
 `;
 
 product.attributes.sizes.forEach(function(size) {
     console.log(size);
+});
+
+let sizesContainer = document.querySelector(".sizes");
+product.attributes.sizes.forEach(function(size) {
+    sizesContainer.innerHTML += `<button>${size}</button>`;
 });
