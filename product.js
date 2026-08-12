@@ -653,5 +653,8 @@ let productContainer = document.getElementById("product");
 productContainer.innerHTML = `
     <img src="${product.images[0]}" width="300">
     <h1>${product.title}</h1>
-    <p>${product.price}</p>
+    <p>$${product.price}</p>
+    <p>${product.description}</p>
+    <p>In stock : ${product.stock}</p>
+    <p>Raited : ${product.rating.rate} by ${product.rating.count} people</p>
 `;
