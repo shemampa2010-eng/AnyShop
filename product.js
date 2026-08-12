@@ -656,6 +656,17 @@ productContainer.innerHTML = `
     
     <p>$${product.price}</p>
     <p>${product.description}</p>
-    <p>In stock : ${product.stock}</p>
-    <p>Raited : ${product.rating.rate} by ${product.rating.count} people</p>
+
+    <h3>Choose your size</h3>
+
+    <div class="sizes">
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+    </div>
 `;
+
+product.attributes.sizes.forEach(function(size) {
+    console.log(size);
+});
