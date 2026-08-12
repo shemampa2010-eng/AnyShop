@@ -639,26 +639,28 @@ let clothes = [
 
 let productsContainer = document.getElementById("products");
 
-
 clothes.forEach(function(product) {
+
     productsContainer.innerHTML += `
-    <div class="product" data-id="${product.id}">
-        <img class="product-image" src="${product.images[0]}">
-        <h2>${product.title}</h2>
-        <p>$${product.price}</p>
-    </div>
+        <div class="product" data-id="${product.id}">
+            <img class="product-image" src="${product.images[0]}">
+            <h2>${product.title}</h2>
+            <p>$${product.price}</p>
+        </div>
     `;
+
 });
 
-let boxes = document.querySelectorAll(".product") ;
+
+let boxes = document.querySelectorAll(".product");
 
 boxes.forEach(function(box) {
 
     box.addEventListener("click", function() {
 
-        console.log("J'ai clique sur la boxe ", box.dataset.id);
+        let id = box.dataset.id;
 
-        window.location.href = "product.html";
+        window.location.href = `product.html?id=${id}`;
 
     });
 
