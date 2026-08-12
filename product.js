@@ -669,3 +669,22 @@ let sizesContainer = document.querySelector(".sizes");
 product.attributes.sizes.forEach(function(size) {
     sizesContainer.innerHTML += `<button>${size}</button>`;
 });
+
+let sizeButtons = document.querySelectorAll(".sizes button");
+
+sizeButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        sizeButtons.forEach(function(button) {
+            button.classList.remove("selected");
+        });
+
+        button.classList.add("selected");
+
+        let selectedSize = button.textContent;
+
+        console.log(selectedSize);
+    });
+
+});
