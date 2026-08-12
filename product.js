@@ -688,3 +688,9 @@ sizeButtons.forEach(function(button) {
     });
 
 });
+
+let addToCart = document.getElementById("addToCart");
+
+addToCart.addEventListener("click", function() {
+    console.log("Produit ajouté au panier");
+});
