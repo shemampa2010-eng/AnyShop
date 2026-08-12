@@ -1,0 +1,17 @@
+#product {
+    width: 80%;
+    margin: 40px auto;
+}
+
+#product img {
+    width: 300px;
+}
+
+#product h1 {
+    font-size: 30px;
+}
+
+#product p {
+    font-size: 20px;
+    font-weight: bold;
+}

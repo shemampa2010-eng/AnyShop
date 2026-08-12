@@ -651,8 +651,9 @@ console.log(product);
 let productContainer = document.getElementById("product");
 
 productContainer.innerHTML = `
-    <img src="${product.images[0]}" width="300">
     <h1>${product.title}</h1>
+    <img src="${product.images[0]}" width="300">
+    
     <p>$${product.price}</p>
     <p>${product.description}</p>
     <p>In stock : ${product.stock}</p>
