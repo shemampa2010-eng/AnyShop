@@ -646,13 +646,20 @@ clothes.forEach(function(product) {
             <img class="product-image" src="${product.images[0]}">
             <h2>${product.title}</h2>
             <p>$${product.price}</p>
+            <button class= "add">add to cart</button>
         </div>
     `;
 
 });
 
-
+let addToCart = document.querySelectorAll(".add")
 let boxes = document.querySelectorAll(".product");
+
+addToCart.forEach(function(button){
+  button.addEventListener("click", function () {
+    console.log(button.parentElement.dataset.id)
+  })
+})
 
 boxes.forEach(function(box) {
 

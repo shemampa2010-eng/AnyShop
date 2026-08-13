@@ -689,8 +689,14 @@ sizeButtons.forEach(function(button) {
 
 });
 
+let cart = [];
+
 let addToCart = document.getElementById("addToCart");
 
 addToCart.addEventListener("click", function() {
-    console.log("Produit ajouté au panier");
+
+    cart.push(product);
+
+    console.log(cart);
+
 });
