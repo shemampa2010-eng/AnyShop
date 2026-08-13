@@ -23,3 +23,41 @@ body{
     background-color: black;
     color: white;
 }
+
+
+#head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    text-decoration: none;
+    color: #222;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+}
+
+nav a,
+.cart {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+nav a:hover,
+.cart:hover {
+    color: #777;
+}
