@@ -665,3 +665,15 @@ boxes.forEach(function(box) {
     });
 
 });
+
+let women = document.getElementById("Femme");
+let men = document.getElementById("Homme");
+
+
+women.addEventListener("click", function() {
+    console.log("Femme");
+});
+
+men.addEventListener("click", function() {
+    console.log("Homme");
+});
