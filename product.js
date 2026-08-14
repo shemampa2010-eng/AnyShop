@@ -671,6 +671,7 @@ product.attributes.sizes.forEach(function(size) {
 });
 
 let sizeButtons = document.querySelectorAll(".sizes button");
+let selectedSize = null
 
 sizeButtons.forEach(function(button) {
 
@@ -682,7 +683,7 @@ sizeButtons.forEach(function(button) {
 
         button.classList.add("selected");
 
-        let selectedSize = button.textContent;
+        selectedSize = button.textContent;
 
         console.log(selectedSize);
     });
@@ -695,7 +696,10 @@ let addToCart = document.getElementById("addToCart");
 
 addToCart.addEventListener("click", function() {
 
-    cart.push(product);
+    cart.push({
+      product: product,
+      size: selectedSize
+    });
 
     console.log(cart);
 
