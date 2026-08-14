@@ -13,3 +13,53 @@
     <script src="localStorage_exercice.js"></script>
   </body>
 </html>
+
+<button id="moins">-1</button>
+<span id="compteur">0</span>
+<button id="plus">+1</button>
+
+<button id="reset">Reset</button>
+
+<!-- <script>
+    const moins = document.querySelector("#moins");
+    const plus = document.querySelector("#plus");
+    const reset = document.querySelector("#reset");
+    const compteurHTML = document.querySelector("#compteur");
+
+    let compteur = localStorage.getItem("compteur");
+
+    
+    if (compteur === null) {
+        compteur = 0;
+    } else {
+        compteur = Number(compteur);
+    }
+
+    compteurHTML.textContent = compteur;
+
+
+    plus.addEventListener("click", function() {
+        compteur++;
+
+        compteurHTML.textContent = compteur;
+
+        localStorage.setItem("compteur", compteur);
+    });
+
+
+    moins.addEventListener("click", function() {
+        compteur--;
+
+        compteurHTML.textContent = compteur;
+
+        localStorage.setItem("compteur", compteur);
+    });
+
+    reset.addEventListener("click", function() {
+        compteur = 0;
+
+        compteurHTML.textContent = compteur;
+
+        localStorage.setItem("compteur", compteur);
+    });
+</script> -->
