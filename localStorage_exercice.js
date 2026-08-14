@@ -4,5 +4,5 @@ const input = document.querySelector("#prenom");
 
 bouton.addEventListener("click", function(){
   localStorage.setItem("prenom" , input.value)
-  console.log(localStorage)
-})
+  resultat.textContent = "Bonjour " + localStorage.getItem("prenom");
+});
