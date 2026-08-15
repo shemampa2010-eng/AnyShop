@@ -661,10 +661,6 @@ productContainer.innerHTML = `
     <div class="sizes"></div>
 `;
 
-product.attributes.sizes.forEach(function(size) {
-    console.log(size);
-});
-
 let sizesContainer = document.querySelector(".sizes");
 product.attributes.sizes.forEach(function(size) {
     sizesContainer.innerHTML += `<button>${size}</button>`;
@@ -685,7 +681,6 @@ sizeButtons.forEach(function(button) {
 
         selectedSize = button.textContent;
 
-        console.log(selectedSize);
     });
 
 });
@@ -697,10 +692,11 @@ let addToCart = document.getElementById("addToCart");
 addToCart.addEventListener("click", function() {
 
     cart.push({
-      product: product,
+      product: product.id,
       size: selectedSize
     });
 
     console.log(cart);
+    console.log(product)
 
 });
