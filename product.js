@@ -685,7 +685,7 @@ sizeButtons.forEach(function(button) {
 
 });
 
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 let addToCart = document.getElementById("addToCart");
 
@@ -696,7 +696,7 @@ addToCart.addEventListener("click", function() {
       size: selectedSize
     });
 
+    localStorage.setItem("cart" , JSON.stringify(cart))
     console.log(cart);
-    console.log(product)
 
 });
