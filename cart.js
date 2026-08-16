@@ -16,9 +16,28 @@ cart.forEach(function(item) {
             <h2>${product.title}</h2>
             <p>$${product.price}</p>
             <p>Size: ${item.size}</p>
+            <button class="remove" data-id= "${product.id}">Remove</button>
         </div>
     `;
 });
+
+let removeButtons = document.querySelectorAll(".remove");
+
+removeButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        let id = button.dataset.id;
+
+        cart = cart.filter(function(item){
+            return item.product != id
+        })
+        console.log(cart);
+
+    });
+
+});
+
 
 cart.forEach(function(item) {
 
@@ -29,6 +48,6 @@ cart.forEach(function(item) {
     total += product.price;
 });
 
-cartContainer.innerHTML += `
-    <h2>Total : $${total.toFixed(2)}</h2>
-`;
+// cartContainer.innerHTML += `
+//     <h2>Total : $${total.toFixed(2)}</h2>
+//`;
