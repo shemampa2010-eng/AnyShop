@@ -32,8 +32,9 @@ removeButtons.forEach(function(button) {
         cart = cart.filter(function(item){
             return item.product != id
         })
-        console.log(cart);
 
+        localStorage.setItem("cart" , JSON.stringify(cart))
+        button.parentElement.remove()
     });
 
 });
