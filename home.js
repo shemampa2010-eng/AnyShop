@@ -13,16 +13,29 @@ clothes.forEach(function(product) {
 
 });
 
-let addButton = document.querySelectorAll(".add")
+let addButton = document.querySelectorAll(".add");
 
-addButton.forEach(function(button){
-    button.addEventListener("click" , function(event){
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+addButton.forEach(function(button) {
+
+    button.addEventListener("click", function(event) {
+
         event.stopPropagation();
-        let id = button.parentElement.dataset.id
-        console.log(id);
-    })
 
-})
+        let id = button.parentElement.dataset.id;
+
+        cart.push({
+            product: id
+        });
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        console.log(cart);
+
+    });
+
+});
 
 
 productsContainer.addEventListener("click", function(event) {
