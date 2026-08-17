@@ -75,7 +75,6 @@ img {
 }
 
 
-/* FOOTER */
 
 footer {
     margin-top: 40px;
@@ -87,8 +86,16 @@ footer {
     border-top: 1px solid #ddd;
 }
 
-
-/* PETIT ECRAN */
+#message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px;
+}
 
 @media (max-width: 600px) {
 

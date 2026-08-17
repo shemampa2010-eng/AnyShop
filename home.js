@@ -16,7 +16,7 @@ clothes.forEach(function(product) {
 let addButton = document.querySelectorAll(".add");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
+let message = document.querySelector("#message")
 addButton.forEach(function(button) {
 
     button.addEventListener("click", function(event) {
@@ -31,6 +31,15 @@ addButton.forEach(function(button) {
 
         localStorage.setItem("cart", JSON.stringify(cart));
 
+        button.style.backgroundColor = "yellow";
+        setTimeout(function(){
+            button.style = ""
+        }, 1500)
+
+        message.textContent = "Produit ajouté au panier !";
+        setTimeout(function() {
+            message.textContent = "";
+        }, 1500);
         console.log(cart);
 
     });
