@@ -7,7 +7,7 @@ clothes.forEach(function(product) {
             <img class="product-image" src="${product.images[0]}">
             <h2>${product.title}</h2>
             <p>$${product.price}</p>
-            <button class="add">add to cart</button>
+            <button class="add">Add to cart</button>
         </div>
     `;
 
@@ -16,14 +16,21 @@ clothes.forEach(function(product) {
 
 productsContainer.addEventListener("click", function(event) {
 
-    if (event.target.matches(".add")) {
-        console.log("Add to cart");
-        console.log(event.target.parentElement.dataset.id);
+    if (event.target.classList.contains("add")) {
+
+        let id = event.target.parentElement.dataset.id;
+
+        console.log("Produit à ajouter :", id);
+
         return;
     }
 
-    if (event.target.matches(".product")) {
-        let id = event.target.dataset.id;
+
+    let box = event.target.closest(".product");
+
+    if (box) {
+
+        let id = box.dataset.id;
 
         window.location.href = `product.html?id=${id}`;
     }

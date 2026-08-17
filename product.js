@@ -58,7 +58,10 @@ addToCart.addEventListener("click", function() {
     });
 
     localStorage.setItem("cart" , JSON.stringify(cart))
-    
+});
+
+addToCart.addEventListener("click", function() {
+
+    addToCart.classList.add("clicked");
 
 });
-console.log(cart);
