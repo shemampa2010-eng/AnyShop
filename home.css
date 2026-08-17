@@ -95,6 +95,8 @@ footer {
     font-weight: bold;
     font-size: 18px;
     margin: 20px;
+    background-color: #fefefe;
+    padding: 5px;
 }
 
 @media (max-width: 600px) {

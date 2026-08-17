@@ -34,12 +34,12 @@ addButton.forEach(function(button) {
         button.style.backgroundColor = "yellow";
         setTimeout(function(){
             button.style = ""
-        }, 1500)
+        }, 1000)
 
         message.textContent = "Produit ajouté au panier !";
         setTimeout(function() {
             message.textContent = "";
-        }, 1500);
+        }, 1000);
         console.log(cart);
 
     });
