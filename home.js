@@ -7,11 +7,22 @@ clothes.forEach(function(product) {
             <img class="product-image" src="${product.images[0]}">
             <h2>${product.title}</h2>
             <p>$${product.price}</p>
-            <button class="add">Add to cart</button>
+            <button class="add">+</button>
         </div>
     `;
 
 });
+
+let addButton = document.querySelectorAll(".add")
+
+addButton.forEach(function(button){
+    button.addEventListener("click" , function(event){
+        event.stopPropagation();
+        let id = button.parentElement.dataset.id
+        console.log(id);
+    })
+
+})
 
 
 productsContainer.addEventListener("click", function(event) {

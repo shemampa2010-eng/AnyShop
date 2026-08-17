@@ -1,62 +1,66 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
-    padding: 0 30px;
+    padding: 0 20px;
     background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
 }
 
 
 #head {
-    position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 15px 25px;
     background-color: white;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 #head h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 22px;
 }
 
-
 nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
-    gap: 30px;
+    gap: 18px;
 }
 
 nav a {
     text-decoration: none;
     color: #222;
+    font-size: 15px;
     font-weight: bold;
 }
 
+nav a:hover {
+    color: #777;
+}
+
+img {
+    width: 60px;
+}
 
 #products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 35px;
+    gap: 25px;
 }
 
 .product {
     width: 200px;
+
     padding: 10px;
+
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: white;
 }
 
 .product-image {
     width: 100%;
     height: 250px;
+
     object-fit: cover;
 }
 
@@ -68,26 +72,23 @@ nav a {
 .product p {
     font-size: 14px;
     font-weight: bold;
-    margin: 0;
 }
 
 
-
-img {
-    width: 35%;
-    max-width: 150px;
-}
-
+/* FOOTER */
 
 footer {
     margin-top: 40px;
     padding: 20px;
+
     text-align: center;
+
     background-color: white;
     border-top: 1px solid #ddd;
 }
 
 
+/* PETIT ECRAN */
 
 @media (max-width: 600px) {
 
@@ -95,29 +96,21 @@ footer {
         padding: 0 10px;
     }
 
-
     #head {
         flex-direction: column;
         gap: 15px;
     }
 
-
     nav {
-        position: static;
-        transform: none;
-        flex-wrap: wrap;
-        justify-content: center;
         gap: 15px;
     }
-
 
     #products {
         gap: 15px;
     }
 
     .product {
-        width: calc(50% - 10px);
-        padding: 7px;
+        width: 150px;
     }
 
     .product-image {
@@ -126,13 +119,5 @@ footer {
 
     .product h2 {
         font-size: 14px;
-    }
-
-    .product p {
-        font-size: 13px;
-    }
-
-    img {
-        width: 120px;
     }
 }
