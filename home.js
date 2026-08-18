@@ -24,23 +24,10 @@ addButton.forEach(function(button) {
         event.stopPropagation();
 
         let id = button.parentElement.dataset.id;
-
-        cart.push({
-            product: id
-        });
+        window.location.href = `product.html?id=${id}`;
 
         localStorage.setItem("cart", JSON.stringify(cart));
 
-        button.style.backgroundColor = "yellow";
-        setTimeout(function(){
-            button.style = ""
-        }, 1000)
-
-        message.textContent = "Produit ajouté au panier !";
-        setTimeout(function() {
-            message.textContent = "";
-        }, 1000);
-        console.log(cart);
 
     });
 
