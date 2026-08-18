@@ -50,6 +50,8 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 let addToCart = document.getElementById("addToCart");
 
+let message = document.querySelector("#message")
+
 addToCart.addEventListener("click", function() {
 
     cart.push({
@@ -63,5 +65,6 @@ addToCart.addEventListener("click", function() {
 addToCart.addEventListener("click", function() {
 
     addToCart.classList.add("clicked");
+    message.textContent = "Added to the cart"
 
 });

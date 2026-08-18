@@ -150,6 +150,18 @@ nav a:hover,
     background-color: green;
 }
 
+#message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px;
+    background-color: #fefefe;
+    padding: 5px;
+}
 
 @media (max-width: 800px) {
 

@@ -16,7 +16,6 @@ clothes.forEach(function(product) {
 let addButton = document.querySelectorAll(".add");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-let message = document.querySelector("#message")
 addButton.forEach(function(button) {
 
     button.addEventListener("click", function(event) {
