@@ -71,6 +71,25 @@ navLinks.forEach(function(link) {
         event.preventDefault();
 
         let category;
+        if (link.textContent === "Home") {
+
+            productsContainer.innerHTML = "";
+
+            clothes.forEach(function(product) {
+
+                productsContainer.innerHTML += `
+                    <div class="product" data-id="${product.id}">
+                        <img class="product-image" src="${product.images[0]}">
+                        <h2>${product.title}</h2>
+                        <p>$${product.price}</p>
+                        <button class="add">+</button>
+                    </div>
+                `;
+
+            });
+
+            return;
+        }
 
         if (link.textContent === "Femme") {
             category = "women's clothing";
@@ -97,7 +116,7 @@ navLinks.forEach(function(link) {
                     <img class="product-image" src="${product.images[0]}">
                     <h2>${product.title}</h2>
                     <p>$${product.price}</p>
-                    <button class="add">add to cart</button>
+                    <button class="add">+</button>
                 </div>
             `;
 
