@@ -62,78 +62,47 @@ productsContainer.addEventListener("click", function(event) {
 });
 
 
-let women = document.getElementById("Femme");
-let men = document.getElementById("Homme");
-let unisex = document.getElementById("Unisex");
+let navLinks = document.querySelectorAll("nav a");
 
+navLinks.forEach(function(link) {
 
-let womenClothes = clothes.filter(function(product) {
-    return product.category === "women's clothing";
-});
+    link.addEventListener("click", function(event) {
 
-let menClothes = clothes.filter(function(product) {
-    return product.category === "men's clothing";
-});
+        event.preventDefault();
 
-let unisexClothes = clothes.filter(function(product) {
-    return product.category === "unisex";
-});
+        let category;
 
+        if (link.textContent === "Femme") {
+            category = "women's clothing";
+        }
 
-women.addEventListener("click", function() {
+        if (link.textContent === "Homme") {
+            category = "men's clothing";
+        }
 
-    productsContainer.innerHTML = "";
+        if (link.textContent === "Unisex") {
+            category = "unisex";
+        }
 
-    womenClothes.forEach(function(product) {
+        let filteredClothes = clothes.filter(function(product) {
+            return product.category === category;
+        });
 
-        productsContainer.innerHTML += `
-            <div class="product" data-id="${product.id}">
-                <img src="${product.images[0]}" width="200">
-                <h2>${product.title}</h2>
-                <p>$${product.price}</p>
-                <button class="add">add to cart</button>
-            </div>
-        `;
+        productsContainer.innerHTML = "";
 
-    });
+        filteredClothes.forEach(function(product) {
 
-});
+            productsContainer.innerHTML += `
+                <div class="product" data-id="${product.id}">
+                    <img class="product-image" src="${product.images[0]}">
+                    <h2>${product.title}</h2>
+                    <p>$${product.price}</p>
+                    <button class="add">add to cart</button>
+                </div>
+            `;
 
-
-men.addEventListener("click", function() {
-
-    productsContainer.innerHTML = "";
-
-    menClothes.forEach(function(product) {
-
-        productsContainer.innerHTML += `
-            <div class="product" data-id="${product.id}">
-                <img src="${product.images[0]}" width="200">
-                <h2>${product.title}</h2>
-                <p>$${product.price}</p>
-                <button class="add">add to cart</button>
-            </div>
-        `;
-
-    });
-
-});
-
-
-unisex.addEventListener("click", function() {
-
-    productsContainer.innerHTML = "";
-
-    unisexClothes.forEach(function(product) {
-
-        productsContainer.innerHTML += `
-            <div class="product" data-id="${product.id}">
-                <img src="${product.images[0]}" width="200">
-                <h2>${product.title}</h2>
-                <p>$${product.price}</p>
-                <button class="add">add to cart</button>
-            </div>
-        `;
+        });
+        console.log(filteredClothes);
 
     });
 
