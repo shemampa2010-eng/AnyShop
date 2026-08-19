@@ -65,6 +65,11 @@ addToCart.addEventListener("click", function() {
 addToCart.addEventListener("click", function() {
 
     addToCart.classList.add("clicked");
-    message.textContent = "Added to the cart"
+
+    message.textContent = "Added to the cart";
+
+    setTimeout(function() {
+        message.textContent = "";
+    }, 1000);
 
 });

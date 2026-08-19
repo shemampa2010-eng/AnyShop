@@ -15,7 +15,12 @@ clothes.forEach(function(product) {
 
 let addButton = document.querySelectorAll(".add");
 
+let cartCount = document.getElementById("cartCount");
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+cartCount.textContent = cart.length;
+
 addButton.forEach(function(button) {
 
     button.addEventListener("click", function(event) {
