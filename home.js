@@ -1,41 +1,30 @@
 let productsContainer = document.getElementById("products");
 
-clothes.forEach(function(product) {
 
-    productsContainer.innerHTML += `
-        <div class="product" data-id="${product.id}">
-            <img class="product-image" src="${product.images[0]}">
-            <h2>${product.title}</h2>
-            <p>$${product.price}</p>
-            <button class="add">+</button>
-        </div>
-    `;
+function displayProducts(products) {
 
-});
+    productsContainer.innerHTML = "";
 
-let addButton = document.querySelectorAll(".add");
+    products.forEach(function(product) {
 
-let cartCount = document.getElementById("cartCount");
-
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-cartCount.textContent = cart.length;
-
-addButton.forEach(function(button) {
-
-    button.addEventListener("click", function(event) {
-
-        event.stopPropagation();
-
-        let id = button.parentElement.dataset.id;
-        window.location.href = `product.html?id=${id}`;
-
-        localStorage.setItem("cart", JSON.stringify(cart));
-
+        productsContainer.innerHTML += `
+            <div class="product" data-id="${product.id}">
+                <img class="product-image" src="${product.images[0]}">
+                <h2>${product.title}</h2>
+                <p>$${product.price}</p>
+                <button class="add">+</button>
+            </div>
+        `;
 
     });
 
-});
+}
+
+
+displayProducts(clothes);
+
+
+
 
 
 productsContainer.addEventListener("click", function(event) {
@@ -44,7 +33,7 @@ productsContainer.addEventListener("click", function(event) {
 
         let id = event.target.parentElement.dataset.id;
 
-        console.log("Produit à ajouter :", id);
+        window.location.href = `product.html?id=${id}`;
 
         return;
     }
@@ -57,6 +46,7 @@ productsContainer.addEventListener("click", function(event) {
         let id = box.dataset.id;
 
         window.location.href = `product.html?id=${id}`;
+
     }
 
 });
@@ -70,26 +60,16 @@ navLinks.forEach(function(link) {
 
         event.preventDefault();
 
-        let category;
         if (link.textContent === "Home") {
 
-            productsContainer.innerHTML = "";
-
-            clothes.forEach(function(product) {
-
-                productsContainer.innerHTML += `
-                    <div class="product" data-id="${product.id}">
-                        <img class="product-image" src="${product.images[0]}">
-                        <h2>${product.title}</h2>
-                        <p>$${product.price}</p>
-                        <button class="add">+</button>
-                    </div>
-                `;
-
-            });
+            displayProducts(clothes);
 
             return;
         }
+
+
+        let category;
+
 
         if (link.textContent === "Femme") {
             category = "women's clothing";
@@ -103,26 +83,17 @@ navLinks.forEach(function(link) {
             category = "unisex";
         }
 
+
         let filteredClothes = clothes.filter(function(product) {
+
             return product.category === category;
-        });
-
-        productsContainer.innerHTML = "";
-
-        filteredClothes.forEach(function(product) {
-
-            productsContainer.innerHTML += `
-                <div class="product" data-id="${product.id}">
-                    <img class="product-image" src="${product.images[0]}">
-                    <h2>${product.title}</h2>
-                    <p>$${product.price}</p>
-                    <button class="add">+</button>
-                </div>
-            `;
 
         });
-        console.log(filteredClothes);
+
+
+        displayProducts(filteredClothes);
 
     });
 
 });
+localStorage.getItem("cart")
