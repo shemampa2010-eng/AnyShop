@@ -2,6 +2,8 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 let cartContainer = document.getElementById("cart");
 
+let cartCount = document.getElementById("cartCount");
+
 cartContainer.innerHTML = "";
 
 if (cart.length === 0) {
@@ -51,6 +53,7 @@ removeButtons.forEach(function(button) {
         localStorage.setItem("cart", JSON.stringify(cart));
 
         button.parentElement.remove();
+        cartCount.textContent = cart.length;
 
     });
 

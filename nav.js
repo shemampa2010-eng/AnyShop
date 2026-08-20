@@ -19,6 +19,5 @@ head.innerHTML = `
 
 let savedCart = JSON.parse(localStorage.getItem("cart")) || [];
 
-let cartCount = document.getElementById("cartCount");
 
 cartCount.textContent = savedCart.length;
