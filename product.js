@@ -11,16 +11,25 @@ let productContainer = document.getElementById("product");
 
 productContainer.innerHTML = `
     <h1>${product.title}</h1>
+
     <img src="${product.images[0]}" width="300">
 
     <p>$${product.price}</p>
+
     <p>${product.description}</p>
+
+    <p>Rating: ${product.rating.rate} / 5</p>
+
+    <p>Reviews: ${product.rating.count}</p>
+
+    <p>Material: ${product.attributes.material}</p>
+
+    <p>Stock: ${product.stock}</p>
 
     <h3>Choose your size</h3>
 
     <div class="sizes"></div>
 `;
-
 
 let sizesContainer = document.querySelector(".sizes");
 
