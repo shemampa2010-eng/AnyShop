@@ -52,7 +52,7 @@ productsContainer.addEventListener("click", function(event) {
 });
 
 
-let navLinks = document.querySelectorAll("nav a");
+let navLinks = document.querySelectorAll("nav a:not(.cart)");
 
 navLinks.forEach(function(link) {
 
@@ -96,4 +96,3 @@ navLinks.forEach(function(link) {
     });
 
 });
-localStorage.getItem("cart")
