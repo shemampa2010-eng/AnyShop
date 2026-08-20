@@ -4,6 +4,8 @@ let cartContainer = document.getElementById("cart");
 
 let cartCount = document.getElementById("cartCount");
 
+let totalContainer = document.getElementById("total");
+
 cartContainer.innerHTML = "";
 
 if (cart.length === 0) {
@@ -58,3 +60,17 @@ removeButtons.forEach(function(button) {
     });
 
 });
+
+let total = 0;
+
+cart.forEach(function(item) {
+
+    let product = clothes.find(function(product) {
+        return product.id == item.product;
+    });
+
+
+    total += product.price;
+});
+
+totalContainer.textContent = `Total : $${total.toFixed(2)}`;
