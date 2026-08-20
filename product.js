@@ -12,7 +12,9 @@ let productContainer = document.getElementById("product");
 productContainer.innerHTML = `
     <h1>${product.title}</h1>
 
-    <img src="${product.images[0]}" width="300">
+    <img id="mainImage" src="${product.images[0]}" width="300">
+
+    <div class="images"></div>
 
     <p>$${product.price}</p>
 
@@ -30,6 +32,35 @@ productContainer.innerHTML = `
 
     <div class="sizes"></div>
 `;
+
+
+let mainImage = document.getElementById("mainImage");
+
+let imagesContainer = document.querySelector(".images");
+
+imagesContainer.innerHTML = "";
+
+product.images.forEach(function(image) {
+
+    imagesContainer.innerHTML += `
+        <img src="${image}" style="width: 60px; height: 60px;">
+    `;
+
+});
+
+
+let images = document.querySelectorAll(".images img");
+
+images.forEach(function(image) {
+
+    image.addEventListener("click", function() {
+
+        mainImage.src = image.src;
+
+    });
+
+});
+
 
 let sizesContainer = document.querySelector(".sizes");
 

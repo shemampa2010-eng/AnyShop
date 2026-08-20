@@ -163,6 +163,17 @@ nav a:hover,
     padding: 5px;
 }
 
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.images {
+    display: flex;
+    gap: 10px;
+}
+
 @media (max-width: 800px) {
 
 
