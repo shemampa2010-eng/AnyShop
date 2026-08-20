@@ -4,6 +4,9 @@ let cartContainer = document.getElementById("cart");
 
 cartContainer.innerHTML = "";
 
+if (cart.length === 0) {
+        cartContainer.textContent = "Your cart is empty";
+    }
 
 cart.forEach(function(item) {
 
@@ -14,7 +17,6 @@ cart.forEach(function(item) {
     if (!product) {
         return;
     }
-
     cartContainer.innerHTML += `
         <div class="cart-product">
             <img src="${product.images[0]}" width="150">
