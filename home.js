@@ -103,12 +103,12 @@ search.addEventListener("input", function() {
 
     let searchValue = search.value.toLowerCase();
 
-    clothes.forEach(function(product) {
+    let results = clothes.filter(function(product) {
 
-        if (product.title.toLowerCase().includes(searchValue)) {
-            console.log(product.title);
-        }
+        return product.title.toLowerCase().includes(searchValue);
 
     });
+
+    displayProducts(results);
 
 });
