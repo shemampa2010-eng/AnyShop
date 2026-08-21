@@ -68,7 +68,7 @@ cart.forEach(function(item) {
     let product = clothes.find(function(product) {
         return product.id == item.product;
     });
-    
+
     total += product.price;
 });
 

@@ -96,3 +96,10 @@ navLinks.forEach(function(link) {
     });
 
 });
+
+let search = document.getElementById("search")
+search.addEventListener("input", function() {
+
+    console.log(search.value);
+
+});
