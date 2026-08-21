@@ -98,8 +98,17 @@ navLinks.forEach(function(link) {
 });
 
 let search = document.getElementById("search")
+let searchValue = search.value.toLowerCase();
 search.addEventListener("input", function() {
 
-    console.log(search.value);
+    let searchValue = search.value.toLowerCase();
+
+    clothes.forEach(function(product) {
+
+        if (product.title.toLowerCase().includes(searchValue)) {
+            console.log(product.title);
+        }
+
+    });
 
 });
