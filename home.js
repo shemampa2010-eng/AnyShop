@@ -97,18 +97,23 @@ navLinks.forEach(function(link) {
 
 });
 
-let search = document.getElementById("search")
-let searchValue = search.value.toLowerCase();
-search.addEventListener("input", function() {
+const search = document.getElementById("search");
+const range = document.getElementById("range");
 
-    let searchValue = search.value.toLowerCase();
+function filterProducts() {
+    const searchValue = search.value.toLowerCase().trim();
+    const maxPrice = parseFloat(range.value);
 
-    let results = clothes.filter(function(product) {
+    const results = clothes.filter(function(product) {
 
-        return product.title.toLowerCase().includes(searchValue);
+        const matchesSearch = product.title.toLowerCase().includes(searchValue);
 
+        const matchesPrice = Number(product.price) <= maxPrice;
+
+        return matchesSearch && matchesPrice;
     });
-
     displayProducts(results);
+}
 
-});
+search.addEventListener("input", filterProducts);
+range.addEventListener("input", filterProducts);
