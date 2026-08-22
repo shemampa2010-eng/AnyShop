@@ -101,17 +101,27 @@ const search = document.getElementById("search");
 const range = document.getElementById("range");
 
 function filterProducts() {
+
     const searchValue = search.value.toLowerCase().trim();
     const maxPrice = parseFloat(range.value);
 
     const results = clothes.filter(function(product) {
 
-        const matchesSearch = product.title.toLowerCase().includes(searchValue);
+        let matchesSearch = true;
+        let matchesPrice = true;
 
-        const matchesPrice = Number(product.price) <= maxPrice;
+        if (searchValue !== "") {
+            matchesSearch = product.title.toLowerCase().includes(searchValue);
+        }
+
+        if (range.value !== "") {
+            matchesPrice = Number(product.price) <= maxPrice;
+        }
 
         return matchesSearch && matchesPrice;
+
     });
+
     displayProducts(results);
 }
 
