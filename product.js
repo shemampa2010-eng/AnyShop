@@ -30,7 +30,8 @@ productContainer.innerHTML = `
 
     <h3>Choose your size</h3>
 
-    <div class="sizes"></div>
+    <div class="sizes"></div> <input type= "number" id= "quantity">
+
 `;
 
 
