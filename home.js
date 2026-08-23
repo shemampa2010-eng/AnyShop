@@ -127,3 +127,16 @@ function filterProducts() {
 
 search.addEventListener("input", filterProducts);
 range.addEventListener("input", filterProducts);
+
+let sort = document.getElementById("sort");
+
+sort.addEventListener("change", function(){
+    let copy = [...clothes];
+
+    if (sort.value === "price-low") {
+        copy.sort(function(a, b) {
+            return a.price - b.price;
+        });
+    } 
+    displayProducts(copy);
+});
