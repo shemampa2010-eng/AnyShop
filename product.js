@@ -30,11 +30,12 @@ productContainer.innerHTML = `
 
     <h3>Choose your size</h3>
 
-    <div class="sizes"></div> <input type= "number" id= "quantity">
-
+    <div class="sizes"></div> 
+    
+    <input type= "number" id= "quantity">
 `;
 
-
+let quantity = document.getElementById("quantity")
 let mainImage = document.getElementById("mainImage");
 
 let imagesContainer = document.querySelector(".images");
@@ -98,6 +99,7 @@ sizeButtons.forEach(function(button) {
 
 let addToCart = document.getElementById("addToCart");
 
+
 addToCart.addEventListener("click", function() {
 
     if (selectedSize === null) {
@@ -106,10 +108,11 @@ addToCart.addEventListener("click", function() {
     }
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
+    let qty = parseInt(quantity.value) || 1;
     cart.push({
         product: product.id,
-        size: selectedSize
+        size: selectedSize,
+        quantity: qty
     });
 
     localStorage.setItem("cart", JSON.stringify(cart));

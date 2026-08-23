@@ -30,6 +30,7 @@ cart.forEach(function(item) {
             <p>$${product.price}</p>
 
             <p>Size: ${item.size}</p>
+            <p>Quantity: ${item.quantity}</p>
 
             <button class="remove" data-id="${product.id}">
                 Remove
