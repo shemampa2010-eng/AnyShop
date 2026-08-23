@@ -70,7 +70,7 @@ cart.forEach(function(item) {
         return product.id == item.product;
     });
 
-    total += product.price;
+    total += product.price * item.quantity ;
 });
 
 totalContainer.textContent = `Total : $${total.toFixed(2)}`;
