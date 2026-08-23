@@ -138,5 +138,10 @@ sort.addEventListener("change", function(){
             return a.price - b.price;
         });
     } 
+    if (sort.value === "price-high") {
+        copy.sort(function(a, b) {
+            return b.price - a.price;
+        });
+    }
     displayProducts(copy);
 });
