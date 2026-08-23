@@ -108,12 +108,22 @@ addToCart.addEventListener("click", function() {
     }
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
     let qty = parseInt(quantity.value) || 1;
-    cart.push({
-        product: product.id,
-        size: selectedSize,
-        quantity: qty
+
+    let existingItem = cart.find(function(item) {
+        return item.product == product.id && item.size == selectedSize;
     });
+
+    if (existingItem) {
+        existingItem.quantity = (parseInt(existingItem.quantity) || 0) + qty;
+    } else {
+        cart.push({
+            product: product.id,
+            size: selectedSize,
+            quantity: qty
+        });
+    }
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
