@@ -43,6 +43,9 @@ cart.forEach(function(item) {
             <button class="remove" data-id="${product.id}" data-size="${item.size}">
                 Remove
             </button>
+            <button class="delete-all" data-id="${product.id}" data-size="${item.size}">
+                Delete All
+            </button>
         </div>
     `;
 });
@@ -84,3 +87,21 @@ removeButtons.forEach(function(button) {
     });
 
 });
+
+let deleteAllButton = document.querySelectorAll(".delete-all")
+
+deleteAllButton.forEach(function(button){
+
+    button.addEventListener("click", function(){
+        let id = button.dataset.id
+    let size = button.dataset.size
+
+    cart = cart.filter(function(cartItem){
+        return !(cartItem.product == id && cartItem.size == size);
+    })
+    localStorage.setItem("cart", JSON.stringify(cart));
+    location.reload();
+
+    })
+    
+})
