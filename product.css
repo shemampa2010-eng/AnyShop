@@ -175,10 +175,13 @@ nav a:hover,
 }
 
 #quantity {
-    display: block;
-    width: 50px;
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 70px;
+    padding: 8px;
+    text-align: center;
+    margin: 10px 0;
 }
-
 @media (max-width: 800px) {
 
 

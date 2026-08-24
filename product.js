@@ -32,7 +32,7 @@ productContainer.innerHTML = `
 
     <div class="sizes"></div> 
     
-    <input type= "number" id= "quantity">
+    <input type= "number" id= "quantity" placeholder= "quantity">
 `;
 
 let quantity = document.getElementById("quantity")
