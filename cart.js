@@ -47,7 +47,6 @@ cart.forEach(function(item) {
     `;
 });
 
-// Affichage du total et du nombre d'articles
 if (totalContainer) {
     totalContainer.textContent = `Total : $${total.toFixed(2)}`;
 }
@@ -55,7 +54,6 @@ if (cartCount) {
     cartCount.textContent = totalQuantityCount;
 }
 
-// Gestion des boutons de suppression
 let removeButtons = document.querySelectorAll(".remove");
 
 removeButtons.forEach(function(button) {
@@ -66,7 +64,7 @@ removeButtons.forEach(function(button) {
         let size = button.dataset.size;
 
         cart.forEach(function(item) {
-            // Vérifie l'ID et la Taille pour cibler la bonne ligne
+
             if (item.product == id && item.size == size) {
                 let currentQty = parseInt(item.quantity) || 1;
 

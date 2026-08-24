@@ -1,3 +1,8 @@
+let storedClothes = localStorage.getItem("clothes")
+if (storedClothes){
+    clothes = JSON.parse(storedClothes)
+}
+
 let urlInfo = new URLSearchParams(window.location.search);
 
 let id = urlInfo.get("id");
@@ -33,6 +38,7 @@ productContainer.innerHTML = `
     <div class="sizes"></div> 
     
     <input type= "number" id= "quantity" placeholder= "quantity">
+    <p id="stockDisplay">Stock: ${product.stock}</p>
 `;
 
 let quantity = document.getElementById("quantity")
@@ -110,6 +116,15 @@ addToCart.addEventListener("click", function() {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     let qty = parseInt(quantity.value) || 1;
+
+
+    if (qty > product.stock){
+        alert("Stock insuffisant ! Il reste seulement " + product.stock + " articles.");
+        return;
+    }
+    product.stock -= qty ;
+
+    localStorage.setItem("clothes", JSON.stringify(clothes));
 
     let existingItem = cart.find(function(item) {
         return item.product == product.id && item.size == selectedSize;
