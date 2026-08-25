@@ -38,11 +38,13 @@ cart.forEach(function(item) {
             <p>$${product.price}</p>
 
             <p>Size: ${item.size}</p>
-            <p>Quantity: ${qty}</p>
 
-            <button class="remove" data-id="${product.id}" data-size="${item.size}">
-                Remove
-            </button>
+            <div class="quantity-controls">
+                <button class="btn-qty minus" data-id="${product.id}" data-size="${item.size}">-</button>
+                <span>${qty}</span>
+                <button class="btn-qty plus" data-id="${product.id}" data-size="${item.size}">+</button>
+            </div>
+
             <button class="delete-all" data-id="${product.id}" data-size="${item.size}">
                 Delete All
             </button>
@@ -57,22 +59,17 @@ if (cartCount) {
     cartCount.textContent = totalQuantityCount;
 }
 
-let removeButtons = document.querySelectorAll(".remove");
+cartContainer.addEventListener("click", function(event) {
 
-removeButtons.forEach(function(button) {
+    let target = event.target;
+    let id = target.dataset.id;
+    let size = target.dataset.size;
 
-    button.addEventListener("click", function() {
-
-        let id = button.dataset.id;
-        let size = button.dataset.size;
-
+    if (target.classList.contains("minus")) {
         cart.forEach(function(item) {
-
             if (item.product == id && item.size == size) {
-                let currentQty = parseInt(item.quantity) || 1;
-
-                if (currentQty > 1) {
-                    item.quantity = currentQty - 1;
+                if (item.quantity > 1) {
+                    item.quantity -= 1;
                 } else {
                     cart = cart.filter(function(cartItem) {
                         return !(cartItem.product == id && cartItem.size == size);
@@ -83,25 +80,26 @@ removeButtons.forEach(function(button) {
 
         localStorage.setItem("cart", JSON.stringify(cart));
         location.reload();
+    }
 
-    });
+    if (target.classList.contains("plus")) {
+        cart.forEach(function(item) {
+            if (item.product == id && item.size == size) {
+                item.quantity = (parseInt(item.quantity) || 1) + 1;
+            }
+        });
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        location.reload();
+    }
+
+    if (target.classList.contains("delete-all")) {
+        cart = cart.filter(function(cartItem) {
+            return !(cartItem.product == id && cartItem.size == size);
+        });
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        location.reload();
+    }
 
 });
-
-let deleteAllButton = document.querySelectorAll(".delete-all")
-
-deleteAllButton.forEach(function(button){
-
-    button.addEventListener("click", function(){
-        let id = button.dataset.id
-    let size = button.dataset.size
-
-    cart = cart.filter(function(cartItem){
-        return !(cartItem.product == id && cartItem.size == size);
-    })
-    localStorage.setItem("cart", JSON.stringify(cart));
-    location.reload();
-
-    })
-    
-})
