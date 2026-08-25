@@ -1,6 +1,5 @@
 let productsContainer = document.getElementById("products");
 
-
 function displayProducts(products) {
 
     productsContainer.innerHTML = "";
@@ -12,7 +11,7 @@ function displayProducts(products) {
                 <img class="product-image" src="${product.images[0]}">
                 <h2>${product.title}</h2>
                 <p>$${product.price}</p>
-                <button class="add">+</button>
+                <button class="add" data-id="${product.id}">+</button>
             </div>
         `;
 
@@ -20,37 +19,43 @@ function displayProducts(products) {
 
 }
 
-
 displayProducts(clothes);
-
-
-
-
 
 productsContainer.addEventListener("click", function(event) {
 
     if (event.target.classList.contains("add")) {
 
-        let id = event.target.parentElement.dataset.id;
+        event.stopPropagation();
 
-        window.location.href = `product.html?id=${id}`;
+        let productId = event.target.dataset.id;
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+        let existingItem = cart.find(function(item) {
+            return item.product == productId;
+        });
+
+        if (existingItem) {
+            existingItem.quantity = (parseInt(existingItem.quantity) || 1) + 1;
+        } else {
+            cart.push({
+                product: productId,
+                size: "Select size",
+                quantity: 1
+            });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
         return;
     }
-
 
     let box = event.target.closest(".product");
 
     if (box) {
-
         let id = box.dataset.id;
-
         window.location.href = `product.html?id=${id}`;
-
     }
 
 });
-
 
 let navLinks = document.querySelectorAll("nav a:not(.cart)");
 
@@ -61,15 +66,11 @@ navLinks.forEach(function(link) {
         event.preventDefault();
 
         if (link.textContent === "Home") {
-
             displayProducts(clothes);
-
             return;
         }
 
-
         let category;
-
 
         if (link.textContent === "Femme") {
             category = "women's clothing";
@@ -83,13 +84,9 @@ navLinks.forEach(function(link) {
             category = "unisex";
         }
 
-
         let filteredClothes = clothes.filter(function(product) {
-
             return product.category === category;
-
         });
-
 
         displayProducts(filteredClothes);
 
@@ -145,10 +142,10 @@ sort.addEventListener("change", function(){
     }
     if (sort.value === "name"){
         copy.sort(function(a, b){
-            if(a.title < b.title) return -1 ;
-            if(a.title > b.title) return 1 ;
+            if(a.title < b.title) return -1;
+            if(a.title > b.title) return 1;
             return 0;
-        })
+        });
     }
     displayProducts(copy);
 });
