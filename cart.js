@@ -29,6 +29,13 @@ cart.forEach(function(item) {
     total += product.price * qty;
     totalQuantityCount += qty;
 
+    let availableSizes = ["S", "M", "L", "XL"];
+
+    let sizeOptionsHTML = availableSizes.map(function(s) {
+        let selected = item.size === s ? "selected" : "";
+        return `<option value="${s}" ${selected}>${s}</option>`;
+    }).join("");
+
     cartContainer.innerHTML += `
         <div class="cart-product">
             <img src="${product.images[0]}" width="150">
@@ -38,6 +45,15 @@ cart.forEach(function(item) {
             <p>$${product.price}</p>
 
             <p>Size: ${item.size}</p>
+            <p>
+                Size: 
+                <select class="change-size" data-id="${product.id}" data-size="${item.size}">                    <option value="Select size">Select size</option>
+                    <option value="S" ${item.size === "S" ? "selected" : ""}>S</option>
+                    <option value="M" ${item.size === "M" ? "selected" : ""}>M</option>
+                    <option value="L" ${item.size === "L" ? "selected" : ""}>L</option>
+                    <option value="XL" ${item.size === "XL" ? "selected" : ""}>XL</option>
+                </select>
+            </p>
 
             <div class="quantity-controls">
                 <button class="btn-qty minus" data-id="${product.id}" data-size="${item.size}">-</button>
