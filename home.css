@@ -107,6 +107,11 @@ footer {
   background: #fff;
 }
 
+
+.activeAnim {
+    background-color: green;
+}
+
 @media (max-width: 600px) {
 
     body {

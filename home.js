@@ -45,6 +45,14 @@ productsContainer.addEventListener("click", function(event) {
         }
 
         localStorage.setItem("cart", JSON.stringify(cart));
+        
+        let button = event.target ;
+        button.classList.add("activeAnim")
+
+        setTimeout(function() {
+            button.classList.remove("activeAnim")
+        }, 500)
+        
         return;
     }
 
