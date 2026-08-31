@@ -101,7 +101,15 @@ cartContainer.addEventListener("click", function(event) {
     if (target.classList.contains("plus")) {
         cart.forEach(function(item) {
             if (item.product == id && item.size == size) {
-                item.quantity = (parseInt(item.quantity) || 1) + 1;
+                let product = clothes.find(function(p) {
+                    return p.id == id;
+                });
+
+                if (product && item.quantity < product.stock) {
+                    item.quantity = (parseInt(item.quantity) || 1) + 1;
+                } else {
+                    alert(`Stock maximum atteint (${product ? product.stock : 0} disponibles)`);
+                }
             }
         });
 
