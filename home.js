@@ -30,9 +30,19 @@ productsContainer.addEventListener("click", function(event) {
         let productId = event.target.dataset.id;
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+        let product = clothes.find(function(p) {
+            return p.id == productId;
+        });
+
         let existingItem = cart.find(function(item) {
             return item.product == productId;
         });
+
+        // 3. Bloquer si le stock est atteint
+        if (existingItem && product && existingItem.quantity >= product.stock) {
+            alert("Stock maximum atteint !");
+            return;
+        }
 
         if (existingItem) {
             existingItem.quantity = (parseInt(existingItem.quantity) || 1) + 1;
@@ -46,12 +56,12 @@ productsContainer.addEventListener("click", function(event) {
 
         localStorage.setItem("cart", JSON.stringify(cart));
         
-        let button = event.target ;
-        button.classList.add("activeAnim")
+        let button = event.target;
+        button.classList.add("activeAnim");
 
         setTimeout(function() {
-            button.classList.remove("activeAnim")
-        }, 500)
+            button.classList.remove("activeAnim");
+        }, 500);
         
         return;
     }
