@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Paiement - E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="head"></div>
+
+    <main style="max-width: 800px; margin: 20px auto; padding: 0 20px;">
+        <h1>Validation de la commande</h1>
+
+        <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+            
+            <!-- Formulaire d'informations -->
+            <form id="checkoutForm" style="flex: 1; min-width: 300px;">
+                <h3>Vos coordonnées</h3>
+                
+                <p>
+                    <label>Nom complet :</label><br>
+                    <input type="text" id="name" required style="width: 100%; padding: 8px;">
+                </p>
+                <p>
+                    <label>Email :</label><br>
+                    <input type="email" id="email" required style="width: 100%; padding: 8px;">
+                </p>
+                <p>
+                    <label>Adresse de livraison :</label><br>
+                    <input type="text" id="address" required style="width: 100%; padding: 8px;">
+                </p>
+                
+                <h3>Paiement simulé</h3>
+                <p>
+                    <select id="paymentMethod" style="width: 100%; padding: 8px;">
+                        <option value="card">Carte bancaire (Simulé)</option>
+                        <option value="paypal">PayPal (Simulé)</option>
+                    </select>
+                </p>
+
+                <button type="submit" style="padding: 12px 20px; background: green; color: white; border: none; cursor: pointer; width: 100%;">
+                    Payer maintenant
+                </button>
+            </form>
+
+            <div style="flex: 1; min-width: 250px; background: #f9f9f9; padding: 20px; border-radius: 8px;">
+                <h3>Résumé</h3>
+                <div id="orderSummary"></div>
+                <hr>
+                <p>Sous-total : <strong id="subtotal">$0.00</strong></p>
+                <p>Livraison : <strong>$5.00</strong></p>
+                <h2>Total : <strong id="finalTotal">$0.00</strong></h2>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="clothes.js"></script>
+    <script src="nav.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>

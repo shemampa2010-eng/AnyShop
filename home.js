@@ -38,9 +38,9 @@ productsContainer.addEventListener("click", function(event) {
             return item.product == productId;
         });
 
-        // 3. Bloquer si le stock est atteint
         if (existingItem && product && existingItem.quantity >= product.stock) {
             alert("Stock maximum atteint !");
+        
             return;
         }
 
