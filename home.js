@@ -39,6 +39,9 @@ productsContainer.addEventListener("click", function(event) {
         });
 
         if (existingItem && product && existingItem.quantity >= product.stock) {
+
+            event.target.outerHTML = `<span style="color: red;">Out of stock</span>`;
+
             alert("Stock maximum atteint !");
         
             return;
