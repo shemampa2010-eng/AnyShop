@@ -12,6 +12,16 @@ function displayProducts(products) {
                 <h2>${product.title}</h2>
                 <p>$${product.price}</p>
                 <button class="add" data-id="${product.id}">+</button>
+                <p>
+                    Size: 
+                    <select class="change-size" data-id="${product.id}">
+                        <option value="Select size">Select size</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </p>
             </div>
         `;
 
@@ -22,6 +32,10 @@ function displayProducts(products) {
 displayProducts(clothes);
 
 productsContainer.addEventListener("click", function(event) {
+    if (event.target.classList.contains("change-size")) {
+        event.stopPropagation();
+        return;
+    }
 
     if (event.target.classList.contains("add")) {
 
