@@ -47,7 +47,8 @@ cart.forEach(function(item) {
             <p>Size: ${item.size}</p>
             <p>
                 Size: 
-                <select class="change-size" data-id="${product.id}" data-size="${item.size}">                    <option value="Select size">Select size</option>
+                <select class="change-size" data-id="${product.id}" data-size="${item.size}">
+                    <option value="Select size">Select size</option>
                     <option value="S" ${item.size === "S" ? "selected" : ""}>S</option>
                     <option value="M" ${item.size === "M" ? "selected" : ""}>M</option>
                     <option value="L" ${item.size === "L" ? "selected" : ""}>L</option>
@@ -117,15 +118,6 @@ cartContainer.addEventListener("click", function(event) {
         location.reload();
     }
 
-    if (item.product == id && item.size == size ) {
-        let product = clothes.find(p => p.id == id)
-        if (product && item.quantity < product.stock) {
-                item.quantity = (parseInt(item.quantity) || 1) + 1;
-            } else {
-                alert("Stock maximum atteint !");
-            }
-    }
-    
     if (target.classList.contains("delete-all")) {
         cart = cart.filter(function(cartItem) {
             return !(cartItem.product == id && cartItem.size == size);
