@@ -1,18 +1,24 @@
-let storedClothes = localStorage.getItem("clothes")
-if (storedClothes){
-    clothes = JSON.parse(storedClothes)
+let storedClothes = localStorage.getItem("clothes");
+if (storedClothes) {
+    clothes = JSON.parse(storedClothes);
 }
 
 let urlInfo = new URLSearchParams(window.location.search);
-
 let id = urlInfo.get("id");
 
 let product = clothes.find(function(product) {
     return product.id == id;
 });
 
-
 let productContainer = document.getElementById("product");
+
+let sizeOptionsHTML = `<option value="Select size">Select size</option>`;
+
+if (product.attributes && product.attributes.sizes) {
+    product.attributes.sizes.forEach(function(size) {
+        sizeOptionsHTML += `<option value="${size}">${size}</option>`;
+    });
+}
 
 productContainer.innerHTML = `
     <h1>${product.title}</h1>
@@ -35,95 +41,57 @@ productContainer.innerHTML = `
 
     <h3>Choose your size</h3>
 
-    <div class="sizes"></div> 
+    <p>
+        Size: 
+        <select id="sizeSelect">
+            ${sizeOptionsHTML}
+        </select>
+    </p>
     
-    <input type= "number" id= "quantity" placeholder= "quantity">
+    <input type="number" id="quantity" placeholder="quantity" value="1">
     <p id="stockDisplay">Stock: ${product.stock}</p>
 `;
 
-let quantity = document.getElementById("quantity")
+let quantity = document.getElementById("quantity");
 let mainImage = document.getElementById("mainImage");
-
 let imagesContainer = document.querySelector(".images");
 
 imagesContainer.innerHTML = "";
 
 product.images.forEach(function(image) {
-
     imagesContainer.innerHTML += `
         <img src="${image}" style="width: 60px; height: 60px;">
     `;
-
 });
-
 
 let images = document.querySelectorAll(".images img");
 
 images.forEach(function(image) {
-
     image.addEventListener("click", function() {
-
         mainImage.src = image.src;
-
     });
-
 });
-
-
-let sizesContainer = document.querySelector(".sizes");
-
-product.attributes.sizes.forEach(function(size) {
-
-    sizesContainer.innerHTML += `
-        <button>${size}</button>
-    `;
-
-});
-
-
-let sizeButtons = document.querySelectorAll(".sizes button");
-
-let selectedSize = null;
-
-
-sizeButtons.forEach(function(button) {
-
-    button.addEventListener("click", function() {
-
-        sizeButtons.forEach(function(button) {
-            button.classList.remove("selected");
-        });
-
-        button.classList.add("selected");
-
-        selectedSize = button.textContent;
-
-    });
-
-});
-
 
 let addToCart = document.getElementById("addToCart");
 
-
 addToCart.addEventListener("click", function() {
+    let sizeSelect = document.getElementById("sizeSelect");
+    let selectedSize = sizeSelect.value;
 
-    if (selectedSize === null) {
+    if (selectedSize === "Select size" || !selectedSize) {
         alert("Please choose a size");
         return;
     }
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
     let qty = parseInt(quantity.value) || 1;
 
-
-    if (qty > product.stock){
+    if (qty > product.stock) {
         alert("Stock insuffisant ! Il reste seulement " + product.stock + " articles.");
         return;
     }
-    product.stock -= qty ;
 
+    product.stock -= qty;
     localStorage.setItem("clothes", JSON.stringify(clothes));
 
     let existingItem = cart.find(function(item) {
@@ -141,7 +109,5 @@ addToCart.addEventListener("click", function() {
     }
 
     localStorage.setItem("cart", JSON.stringify(cart));
-
     window.location.href = "cart.html";
-
 });
