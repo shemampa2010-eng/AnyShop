@@ -78,11 +78,6 @@ addToCart.addEventListener("click", function() {
     let sizeSelect = document.getElementById("sizeSelect");
     let selectedSize = sizeSelect.value;
 
-    if (selectedSize === "Select size" || !selectedSize) {
-        alert("Please choose a size");
-        return;
-    }
-
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     let qty = parseInt(quantity.value) || 1;
 
