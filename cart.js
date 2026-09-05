@@ -71,6 +71,13 @@ cart.forEach(function(item) {
 
 if (totalContainer) {
     totalContainer.textContent = `Total : $${total.toFixed(2)}`;
+    totalContainer.innerHTML += `
+            <div style="margin-top: 20px;">
+                <a href="payment.html">
+                    Proceed to Checkout
+                </a>
+            </div>
+        `;
 }
 if (cartCount) {
     cartCount.textContent = totalQuantityCount;
