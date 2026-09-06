@@ -4,14 +4,28 @@ function displayProducts(products) {
 
     productsContainer.innerHTML = "";
 
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
     products.forEach(function(product) {
+
+        let cartItem = cart.find(function(item) {
+            return item.product == product.id;
+        });
+
+        let actionElement = "";
+
+        if (cartItem && cartItem.quantity >= product.stock) {
+            actionElement = `<span style="color: red;">Out of stock</span>`;
+        } else {
+            actionElement = `<button class="add" data-id="${product.id}">+</button>`;
+        }
 
         productsContainer.innerHTML += `
             <div class="product" data-id="${product.id}">
                 <img class="product-image" src="${product.images[0]}">
                 <h2>${product.title}</h2>
                 <p>$${product.price}</p>
-                <button class="add" data-id="${product.id}">+</button>
+                ${actionElement}
                 <p>
                     Size: 
                     <select class="change-size" data-id="${product.id}">
