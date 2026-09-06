@@ -88,24 +88,22 @@ footer {
 }
 
 #search {
-  display: flex;
-  align-items: center;
-  width: 300px;
-  height: 40px;
-  padding: 0 15px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  background: #fff;
+    width: 300px;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: #fff;
+    font-size: 14px;
+    outline: none;
 }
+
 #range {
-  display: flex;
-  align-items: center;
-  width: 300px;
-  height: 40px;
-  padding: 0 15px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  background: #fff;
+    width: 250px;
+    height: 20px;
+    margin: 15px 0;
+    accent-color: #222;
+    cursor: pointer;
 }
 
 
