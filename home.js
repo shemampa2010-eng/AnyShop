@@ -25,6 +25,7 @@ function displayProducts(products) {
                     <button class="minus">-</button>
                     <span class="quantity">0</span>
                     <button class="plus">+</button>
+                    <p class= "go-to-cart"></p>
                 </div>
             `;
         }
@@ -60,7 +61,6 @@ function displayProducts(products) {
     });
 
 
-    // On récupère CHAQUE box
     let boxes = document.querySelectorAll(".product");
 
     boxes.forEach(function(box) {
@@ -70,7 +70,6 @@ function displayProducts(products) {
         let quantity = box.querySelector(".quantity");
         let add = box.querySelector(".add");
 
-        // PLUS
         if (plus) {
 
             plus.addEventListener("click", function(event) {
@@ -129,7 +128,6 @@ function displayProducts(products) {
                     return p.id == productId;
                 });
 
-                // ⭐ LA QUANTITÉ DE CETTE BOX
                 let qty = Number(quantity.textContent);
 
                 // Si 0
@@ -140,7 +138,13 @@ function displayProducts(products) {
                     return;
 
                 }
-
+                let goToCartMessage = box.querySelector(".go-to-cart");
+                if (goToCartMessage) {
+                    goToCartMessage.innerHTML = "Successfully added to cart!";
+                    setTimeout(function() {
+                        goToCartMessage.innerHTML = "";
+                    }, 1500);
+                }
 
                 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
