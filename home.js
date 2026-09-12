@@ -153,7 +153,6 @@ function displayProducts(products) {
                 });
 
 
-                // Quantité déjà dans le panier
                 let cartQuantity = 0;
 
                 if (existingItem) {
@@ -163,7 +162,6 @@ function displayProducts(products) {
                 }
 
 
-                // Vérifier le stock AVANT d'ajouter
                 if (product && cartQuantity + qty > product.stock) {
 
                     alert("Not enough stock");
@@ -190,6 +188,12 @@ function displayProducts(products) {
 
                     });
 
+                }
+
+                let cartCountElement = document.getElementById("cartCount");
+                if (cartCountElement) {
+                    let currentCount = Number(cartCountElement.textContent) || 0;
+                    cartCountElement.textContent = currentCount + 1;
                 }
 
 

@@ -27,22 +27,6 @@ body {
     font-weight: bold;
 }
 
-nav {
-    display: flex;
-    gap: 25px;
-}
-
-nav a,
-.cart {
-    text-decoration: none;
-    color: #222;
-    font-weight: bold;
-}
-
-nav a:hover,
-.cart:hover {
-    color: #777;
-}
 
 #product {
     width: 90%;

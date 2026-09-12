@@ -12,6 +12,8 @@ let shippingFee = 5.00;
 
 let checkoutForm = document.getElementById("Payer");
 
+let successMessage = document.getElementById("successMessage");
+
 cart.forEach(function(item) {
     let match = clothes.find(function(p) {
         return p.id == item.product;
@@ -39,6 +41,12 @@ checkoutForm.addEventListener("click", function(event){
         return;
     }
     
+    
+    successMessage.style.display = "block"
+    successMessage.innerHTML = `
+    <h2>Paiement réussi ! 🎉</h2>`;
     localStorage.removeItem("cart");
-    location.reload(); 
+    setTimeout(function() {
+        location.reload();
+    }, 2000);
 });
