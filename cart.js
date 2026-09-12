@@ -84,7 +84,7 @@ if (totalContainer) {
 }
     
 if (cartCount) {
-    cartCount.textContent = totalQuantityCount;
+    cartCount.textContent = savedCart.length;
 }
 
 cartContainer.addEventListener("click", function(event) {
