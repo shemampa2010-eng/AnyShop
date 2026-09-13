@@ -104,8 +104,8 @@ let clothes = [
     "category": "unisex",
     "description": "Lightweight, moisture-wicking shorts with a built-in liner and zipper key pocket.",
     "images": [
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1597892653980-3cec697283fe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QXRobGV0aWMlMjBSdW5uZXIlMjBTaG9ydHN8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
     ],
     "attributes": {"sizes": ["S", "M", "L"], "colors": ["Black", "Navy Blue"], "material": "100% Nylon"},
     "rating": {"rate": 4.3, "count": 145},
@@ -118,8 +118,8 @@ let clothes = [
     "category": "unisex",
     "description": "Packable lightweight jacket with an adjustable hood and secure zip pockets.",
     "images": [
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1611308725032-74f0a551d018?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V2F0ZXItUmVzaXN0YW50JTIwV2luZGJyZWFrZXIlMjBKYWNrZXR8ZW58MHx8MHx8fDA%3D", 
+      "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
     ],
     "attributes": {"sizes": ["S", "M", "L", "XL"], "colors": ["Olive Green", "Black"], "material": "100% Polyester"},
     "rating": {"rate": 4.6, "count": 92},
@@ -132,8 +132,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Flowing wrap dress featuring a bohemian floral pattern and V-neckline.",
     "images": [
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29tZW5zJTIwaGlnaCUyMHdhaXN0ZWQlMjB0cm91c2VycyUyMGJlaWdlfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29tZW5zJTIwaGlnaCUyMHdhaXN0ZWQlMjB0cm91c2VycyUyMGJlaWdlfGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1759992878336-a5dd342ea245?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RmxvcmFsJTIwUHJpbnQlMjBXcmFwJTIwTWF4aSUyMERyZXNzfGVufDB8fDB8fHww",  
+      "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29tZW5zJTIwaGlnaCUyMHdhaXN0ZWQlMjB0cm91c2VycyUyMGJlaWdlfGVufDB8fDB8fHww"
     ],
     "attributes": {"sizes": ["XS", "S", "M", "L"], "colors": ["Navy Floral", "Red Floral"], "material": "100% Viscose"},
     "rating": {"rate": 4.7, "count": 203},
@@ -146,8 +146,8 @@ let clothes = [
     "category": "men's clothing",
     "description": "A classic wardrobe staple woven from durable, comfortable Oxford cotton.",
     "images": [
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1602810316693-3667c854239a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U2xpbS1GaXQlMjBPeGZvcmQlMjBDb3R0b24lMjBTaGlydHxlbnwwfHwwfHx8MA%3D%3D",  
+      "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
     ],
     "attributes": {"sizes": ["S", "M", "L", "XL"], "colors": ["Light Blue", "White"], "material": "100% Oxford Cotton"},
     "rating": {"rate": 4.5, "count": 165},
@@ -160,7 +160,7 @@ let clothes = [
     "category": "women's clothing",
     "description": "Vintage-inspired high-waisted shorts featuring raw, frayed hems.",
     "images": [
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1651694558313-fdfc4ee862ba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8SGlnaC1SaXNlJTIwRGVuaW0lMjBTaG9ydHN8ZW58MHx8MHx8fDA%3D",
         "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
     ],
     "attributes": {"sizes": ["24", "26", "28", "30"], "colors": ["Light Indigo", "Acid Wash"], "material": "100% Cotton"},
@@ -174,8 +174,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Medium-support seamless bra tailored for yoga, pilates, and gym training.",
     "images": [
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1606902965551-dce093cda6e7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
     ],
     "attributes": {"sizes": ["S", "M", "L"], "colors": ["Teal", "Charcoal"], "material": "90% Nylon, 10% Spandex"},
     "rating": {"rate": 4.8, "count": 187},
@@ -188,8 +188,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Buttery soft, squat-proof workout leggings with a side drop-in pocket.",
     "images": [
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1560233075-4c1e2007908e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8SGlnaC1XYWlzdGVkJTIwWW9nYSUyMExlZ2dpbmdzfGVufDB8fDB8fHww",  
+      "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
     ],
     "attributes": {"sizes": ["XS", "S", "M", "L"], "colors": ["Black", "Plum"], "material": "80% Nylon, 20% Elastane"},
     "rating": {"rate": 4.9, "count": 512},
@@ -202,8 +202,8 @@ let clothes = [
     "category": "unisex",
     "description": "Vintage-wash streetwear graphic t-shirt featuring a structured boxy fit.",
     "images": [
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1630643002954-51e676260697?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SGVhdnl3ZWlnaHQlMjBCb3h5JTIwR3JhcGhpYyUyMFRlZXxlbnwwfHwwfHx8MA%3D%3D",  
+      "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
     ],
     "attributes": {"sizes": ["M", "L", "XL", "XXL"], "colors": ["Vintage Black", "Faded Off-White"], "material": "100% Carded Cotton"},
     "rating": {"rate": 4.6, "count": 74},
@@ -216,8 +216,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Sharp, structured office blazer engineered with tortoiseshell buttons.",
     "images": [
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1639040538847-a47ef0dc004e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8VGFpbG9yZWQlMjBEb3VibGUtQnJlYXN0ZWQlMjBCbGF6ZXJ8ZW58MHx8MHx8fDA%3D",  
+      "https://images.unsplash.com/photo-1546868871-7041f47afc6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pc2V4JTIwc2hvcnRzJTIwYXRo bGV0aWMlMjB3ZWFyfGVufDB8fDB8fHww"
     ],
     "attributes": {"sizes": ["4", "6", "8", "10"], "colors": ["Houndstooth", "Solid Black"], "material": "Polyester Blend"},
     "rating": {"rate": 4.7, "count": 56},
@@ -230,8 +230,8 @@ let clothes = [
     "category": "men's clothing",
     "description": "Classic casual flat-front chino shorts woven with comfortable stretch.",
     "images": [
-        "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVucyUyMHBsYWluJTIwd2hpdGUlMjB0LXNoaXJ0JTIwc3R1ZGlvfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1654570818480-54524bf0186b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGJsYWNrJTIwdC1zaGlydCUyMGZvbGRlZHxlbnwwfHwwfHx8MA%3D%3D"
+      "https://images.unsplash.com/photo-1740512922260-543b1b83c986?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hpbm8lMjBTaG9ydHMlMjA3LUluY2glMjBJbnNlYW18ZW58MHx8MHx8fDA%3D",  
+      "https://images.unsplash.com/photo-1654570818480-54524bf0186b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGJsYWNrJTIwdC1zaGlydCUyMGZvbGRlZHxlbnwwfHwwfHx8MA%3D%3D"
     ],
     "attributes": {"sizes": ["30", "32", "34", "36"], "colors": ["Khaki", "Navy"], "material": "98% Cotton"},
     "rating": {"rate": 4.4, "count": 119},
@@ -244,8 +244,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Elegant bias-cut silk-feel slip skirt featuring a hidden elastic waistband.",
     "images": [
-        "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVucyUyMHBsYWluJTIwd2hpdGUlMjB0LXNoaXJ0JTIwc3R1ZGlvfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1654570818480-54524bf0186b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGJsYWNrJTIwdC1zaGlydCUyMGZvbGRlZHxlbnwwfHwwfHx8MA%3D%3D"
+      "https://images.unsplash.com/photo-1708363390932-15e8a29c0f56?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U2F0aW4lMjBTbGlwJTIwTWlkaSUyMFNraXJ0fGVufDB8fDB8fHww",  
+      "https://images.unsplash.com/photo-1654570818480-54524bf0186b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGJsYWNrJTIwdC1zaGlydCUyMGZvbGRlZHxlbnwwfHwwfHx8MA%3D%3D"
     ],
     "attributes": {"sizes": ["S", "M", "L"], "colors": ["Champagne", "Emerald Green"], "material": "100% Polyester Satin"},
     "rating": {"rate": 4.5, "count": 83},
@@ -258,8 +258,8 @@ let clothes = [
     "category": "men's clothing",
     "description": "Vintage truck-style corduroy jacket insulated with cozy faux-sherpa lining.",
     "images": [
-        "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVucyUyMHBsYWluJTIwd2hpdGUlMjB0LXNoaXJ0JTIwc3R1ZGlvfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1654570818480-54524bf0186b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGJsYWNrJTIwdC1zaGlydCUyMGZvbGRlZHxlbnwwfHwwfHx8MA%3D%3D"
+      "https://images.unsplash.com/photo-1619379408870-2b5565256685?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U2hlcnBhLUxpbmVkJTIwQ29yZHVyb3klMjBKYWNrZXR8ZW58MHx8MHx8fDA%3D",  
+      "https://images.unsplash.com/photo-1654570818480-54524bf0186b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGJsYWNrJTIwdC1zaGlydCUyMGZvbGRlZHxlbnwwfHwwfHx8MA%3D%3D"
     ],
     "attributes": {"sizes": ["M", "L", "XL"], "colors": ["Tan Brown", "Forest Green"], "material": "100% Cotton Corduroy"},
     "rating": {"rate": 4.8, "count": 142},
@@ -272,8 +272,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Classic rigid indigo denim mini skirt designed with a five-pocket layout.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1709672262857-e7e6da8d1734?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QS1MaW5lJTIwRGVuaW0lMjBNaW5pJTIwU2tpcnR8ZW58MHx8MHx8fDA%3D",  
+      "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
     ],
     "attributes": {"sizes": ["25", "27", "29"], "colors": ["Medium Indigo"], "material": "100% Cotton Denim"},
     "rating": {"rate": 4.3, "count": 67},
@@ -286,8 +286,8 @@ let clothes = [
     "category": "men's clothing",
     "description": "Versatile smart-casual pants offering moisture wicking and flexible four-way stretch.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U3RyZXRjaCUyMFNsaW0lMjBBdGhsZXRpYyUyMENoaW5vc3xlbnwwfHwwfHx8MA%3D%3D",  
+      "https://images.unsplash.com/photo-1666358777087-3d3ebe88cd5e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFN0cmV0Y2glMjBTbGltJTIwQXRobGV0aWMlMjBDaGlub3N8ZW58MHx8MHx8fDA%3D"
     ],
     "attributes": {"sizes": ["30x30", "32x32", "34x32"], "colors": ["Dark Khaki", "Black"], "material": "Nylon Spandex Blend"},
     "rating": {"rate": 4.5, "count": 224},

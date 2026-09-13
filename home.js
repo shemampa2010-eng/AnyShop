@@ -23,7 +23,7 @@ function displayProducts(products) {
             actionElement = `
                 <div class="quantity-controls">
                     <button class="minus">-</button>
-                    <span class="quantity">0</span>
+                    <span class="quantity">1</span>
                     <button class="plus">+</button>
                     <p class= "go-to-cart"></p>
                 </div>
@@ -69,6 +69,14 @@ function displayProducts(products) {
         let minus = box.querySelector(".minus");
         let quantity = box.querySelector(".quantity");
         let add = box.querySelector(".add");
+        let selectSize = box.querySelector(".change-size")
+        
+        box.addEventListener("click", function() {
+        let productId = box.dataset.id;
+            window.location.href = `product.html?id=${productId}`;
+        });
+
+        
 
         if (plus) {
 
@@ -112,6 +120,12 @@ function displayProducts(products) {
 
             });
 
+        }
+
+        if (selectSize){
+             selectSize.addEventListener("click", function(event){
+                event.stopPropagation()
+            })
         }
 
 
