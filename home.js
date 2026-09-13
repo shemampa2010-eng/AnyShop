@@ -1,7 +1,6 @@
 let productsContainer = document.getElementById("products");
 
 function displayProducts(products) {
-
     productsContainer.innerHTML = "";
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -25,7 +24,7 @@ function displayProducts(products) {
                     <button class="minus">-</button>
                     <span class="quantity">1</span>
                     <button class="plus">+</button>
-                    <p class= "go-to-cart"></p>
+                    <p class="go-to-cart"></p>
                 </div>
             `;
         }
@@ -60,7 +59,6 @@ function displayProducts(products) {
 
     });
 
-
     let boxes = document.querySelectorAll(".product");
 
     boxes.forEach(function(box) {
@@ -69,94 +67,59 @@ function displayProducts(products) {
         let minus = box.querySelector(".minus");
         let quantity = box.querySelector(".quantity");
         let add = box.querySelector(".add");
-        let selectSize = box.querySelector(".change-size")
+        let selectSize = box.querySelector(".change-size");
         
         box.addEventListener("click", function() {
-        let productId = box.dataset.id;
+            let productId = box.dataset.id;
             window.location.href = `product.html?id=${productId}`;
         });
 
-        
-
         if (plus) {
-
             plus.addEventListener("click", function(event) {
-
                 event.stopPropagation();
-
                 let productId = box.dataset.id;
-
-                let product = clothes.find(function(p) {
-                    return p.id == productId;
-                });
-
+                let product = clothes.find(function(p) { return p.id == productId; });
                 let currentQuantity = Number(quantity.textContent);
 
                 if (product && currentQuantity < product.stock) {
-
                     quantity.textContent = currentQuantity + 1;
-
                 }
-
             });
-
         }
 
-
-        // MINUS
         if (minus) {
-
             minus.addEventListener("click", function(event) {
-
                 event.stopPropagation();
-
                 let currentQuantity = Number(quantity.textContent);
 
                 if (currentQuantity > 0) {
-
                     quantity.textContent = currentQuantity - 1;
-
                 }
-
             });
-
         }
 
         if (selectSize){
             selectSize.addEventListener("click", function(event){
-                event.stopPropagation()
+                event.stopPropagation();
             });
             
             selectSize.addEventListener("change", function(event) {
                 event.stopPropagation();
             });
-
         }
 
-
-        // ADD
         if (add) {
-
             add.addEventListener("click", function(event) {
-
                 event.stopPropagation();
-
                 let productId = box.dataset.id;
-
-                let product = clothes.find(function(p) {
-                    return p.id == productId;
-                });
-
+                let product = clothes.find(function(p) { return p.id == productId; });
                 let qty = Number(quantity.textContent);
 
-                // Si 0
                 if (qty <= 0) {
-
                     alert("Choose a quantity first");
-
                     return;
-
                 }
+
                 let goToCartMessage = box.querySelector(".go-to-cart");
                 if (goToCartMessage) {
                     goToCartMessage.innerHTML = "Successfully added to cart!";
@@ -171,42 +134,25 @@ function displayProducts(products) {
                     return item.product == productId;
                 });
 
-
                 let cartQuantity = 0;
 
                 if (existingItem) {
-
                     cartQuantity = Number(existingItem.quantity);
-
                 }
-
 
                 if (product && cartQuantity + qty > product.stock) {
-
                     alert("Not enough stock");
-
                     return;
-
                 }
 
-
-                // Ajouter la quantité choisie
                 if (existingItem) {
-
                     existingItem.quantity = cartQuantity + qty;
-
                 } else {
-
                     cart.push({
-
                         product: productId,
-
-                        size: "Select size",
-
+                        size: selectSize ? selectSize.value : "Select size",
                         quantity: qty
-
                     });
-
                 }
 
                 let cartCountElement = document.getElementById("cartCount");
@@ -215,29 +161,81 @@ function displayProducts(products) {
                     cartCountElement.textContent = currentCount + 1;
                 }
 
-
                 localStorage.setItem("cart", JSON.stringify(cart));
 
-
-                // Animation
                 add.classList.add("activeAnim");
-
                 setTimeout(function() {
-
                     add.classList.remove("activeAnim");
-
                 }, 500);
 
-
-                // Remettre le compteur à 0
                 quantity.textContent = 0;
-
             });
-
         }
 
     });
 
 }
 
-displayProducts(clothes);
+// --- FONCTION POUR FILTRER ET TRIER DEPUIS LES INPUTS ---
+function applyFilters() {
+    let searchInput = document.getElementById("search");
+    let rangeInput = document.getElementById("range"); // Ton input où l'on écrit un nombre
+    let sortSelect = document.getElementById("sort");
+
+    let filtered = [...clothes];
+
+    // 1. Recherche par texte (search)
+    if (searchInput && searchInput.value.trim() !== "") {
+        let text = searchInput.value.toLowerCase().trim();
+        filtered = filtered.filter(function(product) {
+            return product.title.toLowerCase().includes(text);
+        });
+    }
+
+    // 2. Filtrage par prix maximum (quand on écrit dans range)
+    if (rangeInput && rangeInput.value !== "") {
+        let maxPrice = Number(rangeInput.value);
+        filtered = filtered.filter(function(product) {
+            return product.price <= maxPrice;
+        });
+    }
+
+    // 3. Tri (sort)
+    if (sortSelect && sortSelect.value !== "") {
+        let sortValue = sortSelect.value;
+
+        if (sortValue === "price-low") {
+            filtered.sort(function(a, b) { return a.price - b.price; });
+        } else if (sortValue === "price-high") {
+            filtered.sort(function(a, b) { return b.price - a.price; });
+        } else if (sortValue === "name") {
+            filtered.sort(function(a, b) { return a.title.localeCompare(b.title); });
+        }
+    }
+
+    // Réaffiche les produits filtrés
+    displayProducts(filtered);
+}
+
+// --- ÉCOUTEURS D'ÉVÉNEMENTS ---
+document.addEventListener("DOMContentLoaded", function() {
+    let searchInput = document.getElementById("search");
+    let rangeInput = document.getElementById("range");
+    let sortSelect = document.getElementById("sort");
+
+    if (searchInput) {
+        searchInput.addEventListener("input", applyFilters);
+    }
+
+    if (rangeInput) {
+        // L'événement "input" réagit à CHAQUE chiffre écrit ou effacé
+        rangeInput.addEventListener("input", applyFilters);
+    }
+
+    if (sortSelect) {
+        sortSelect.addEventListener("change", applyFilters);
+    }
+
+    // Affichage initial
+    applyFilters();
+});

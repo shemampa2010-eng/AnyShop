@@ -300,8 +300,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Form-fitting, lightweight knit mock neck top optimized for layering.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1627918976670-2249ffd1042b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE1vY2slMjBOZWNrJTIwUmliYmVkJTIwTG9uZyUyMFNsZWV2ZXxlbnwwfHwwfHx8MA%3D%3D",  
+      "https://images.unsplash.com/photo-1752860043612-88b62b30eefd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TW9jayUyME5lY2slMjBSaWJiZWQlMjBMb25nJTIwU2xlZXZlfGVufDB8fDB8fHww"
     ],
     "attributes": {
       "sizes": ["XS", "S", "M", "L"],
@@ -318,8 +318,8 @@ let clothes = [
     "category": "unisex",
     "description": "Heavyweight premium asymmetrical leather jacket equipped with steel zippers.",
     "images": [
-        "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVucyUyMHBsYWluJTIwd2hpdGUlMjB0LXNoaXJ0JTIwc3R1ZGlvfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1654570818480-54524bf0186b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGJsYWNrJTIwdC1zaGlydCUyMGZvbGRlZHxlbnwwfHwwfHx8MA%3D%3D"
+      "https://images.unsplash.com/photo-1727515546577-f7d82a47b51d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2xhc3NpYyUyMExlYXRoZXIlMjBCaWtlciUyMEphY2tldHxlbnwwfHwwfHx8MA%3D%3D",  
+      "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Q2xhc3NpYyUyMExlYXRoZXIlMjBCaWtlciUyMEphY2tldHxlbnwwfHwwfHx8MA%3D%3D"
     ],
     "attributes": {
       "sizes": ["S", "M", "L", "XL"],
@@ -336,8 +336,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Relaxed breezy linen jumpsuit styled with adjustable shoulder spaghetti straps.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1644581203543-4fb5bd840340?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QmxlbmQlMjBXaWRlLUxlZyUyMEp1bXBzdWl0fGVufDB8fDB8fHww",  
+      "https://images.unsplash.com/photo-1644581203571-922081eb46dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8QmxlbmQlMjBXaWRlLUxlZyUyMEp1bXBzdWl0fGVufDB8fDB8fHww"
     ],
     "attributes": {
       "sizes": ["S", "M", "L"],
@@ -354,8 +354,8 @@ let clothes = [
     "category": "unisex",
     "description": "Warm polar fleece pullover sporting an elastic drawcord waist toggle.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1616163106366-efdc98e1dd19?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8UXVhcnRlci1aaXAlMjBGbGVlY2UlMjBQdWxsb3ZlcnxlbnwwfHwwfHx8MA%3D%3D",  
+      "https://images.unsplash.com/photo-1577120321615-6a748c007151?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UXVhcnRlci1aaXAlMjBGbGVlY2UlMjBQdWxsb3ZlcnxlbnwwfHwwfHx8MA%3D%3D"  
     ],
     "attributes": {
       "sizes": ["S", "M", "L", "XL"],
@@ -516,8 +516,8 @@ let clothes = [
     "category": "men's clothing",
     "description": "Ultra-soft Peruvian Pima cotton polo shirt finished with clean three-button plackets.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+        "https://images.unsplash.com/photo-1625910513413-c23b8bb81cba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UGltYSUyMENvdHRvbiUyMFBvbG8lMjBTaGlydHxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1625910513399-c9fcba54338c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UGltYSUyMENvdHRvbiUyMFBvbG8lMjBTaGlydHxlbnwwfHwwfHx8MA%3D%3D"
     ],
     "attributes": {
       "sizes": ["M", "L", "XL"],
@@ -534,8 +534,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Bandeau style knit long sleeve top featuring foldover Bardot neckline cuts.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+        "https://images.unsplash.com/photo-1593458778871-3c08120770e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8T2ZmLVRoZS1TaG91bGRlciUyMEtuaXQlMjBDcm9wJTIwVG9wfGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1485231183945-fffde7cc051e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8T2ZmLVRoZS1TaG91bGRlciUyMEtuaXQlMjBDcm9wJTIwVG9wfGVufDB8fDB8fHww"
     ],
     "attributes": {
       "sizes": ["S", "M"],
@@ -552,8 +552,8 @@ let clothes = [
     "category": "unisex",
     "description": "Classic button-up medium wash denim trucker jacket built with chest flap pockets.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+        "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RGVuaW0lMjBUcnVja2VyJTIwSmFja2V0fGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1584844308532-b318efe24f74?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fERlbmltJTIwVHJ1Y2tlciUyMEphY2tldHxlbnwwfHwwfHx8MA%3D%3D"
     ],
     "attributes": {
       "sizes": ["S", "M", "L", "XL"],
@@ -570,8 +570,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Trendy tailored suiting vest made from structured linen blend textile layers.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+        "https://images.unsplash.com/photo-1713881917939-b558c8f50ccd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TGluZW4lMjBCdXR0b24tVXAlMjBUYWlsb3JlZCUyMFZlc3R8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1686317321692-ab6569f6b0cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TGluZW4lMjBCdXR0b24tVXAlMjBUYWlsb3JlZCUyMFZlc3R8ZW58MHx8MHx8fDA%3D"
     ],
     "attributes": {
       "sizes": ["S", "M", "L"],
@@ -588,8 +588,8 @@ let clothes = [
     "category": "men's clothing",
     "description": "Streetwear cargo pants finished with elastic cuffs and roomy tactical side utility flaps.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1789110520495-8f1b8545c0ff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Q2FyZ28lMjBVdGlsaXR5JTIwSm9nZ2Vyc3xlbnwwfHwwfHx8MA%3D%3D",  
+      "https://images.unsplash.com/photo-1602985450305-cf01a752da15?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Q2FyZ28lMjBVdGlsaXR5JTIwSm9nZ2Vyc3xlbnwwfHwwfHx8MA%3D%3D"
     ],
     "attributes": {
       "sizes": ["30", "32", "34"],
@@ -606,8 +606,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Sleek double-layered contour fabric bodysuit designed with snap bottom enclosures.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1726004018955-6604053d10d5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U3F1YXJlJTIwTmVjayUyMEJvZHlzdWl0fGVufDB8fDB8fHww",  
+      "https://images.unsplash.com/photo-1681913749298-68acc9428240?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U3F1YXJlJTIwTmVjayUyMEJvZHlzdWl0fGVufDB8fDB8fHww"
     ],
     "attributes": {
       "sizes": ["XS", "S", "M", "L"],
