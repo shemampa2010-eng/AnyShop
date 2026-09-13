@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (rangeInput) {
-        // L'événement "input" réagit à CHAQUE chiffre écrit ou effacé
+  
         rangeInput.addEventListener("input", applyFilters);
     }
 
@@ -236,6 +236,5 @@ document.addEventListener("DOMContentLoaded", function() {
         sortSelect.addEventListener("change", applyFilters);
     }
 
-    // Affichage initial
     applyFilters();
 });

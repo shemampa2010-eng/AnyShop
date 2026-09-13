@@ -18,6 +18,7 @@ let nav = document.getElementById("mainNav");
 let logo = document.getElementById("navLogo");
 let firstLink = document.querySelector(".nav-start");
 
+
 if (nav) {
     nav.style.display = "flex";
     nav.style.alignItems = "center";
@@ -29,6 +30,10 @@ if (nav) {
 if (logo) {
     logo.style.height = "65px"; 
     logo.style.width = "auto";
+    logo.style.cursor = "pointer"
+        logo.addEventListener("click", function(){
+            window.location.href = "home.html"
+    })
 }
 
 if (firstLink) {
