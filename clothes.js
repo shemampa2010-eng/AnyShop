@@ -372,8 +372,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Button-up chunky knit oversized cardigan detailed with drop shoulder lines.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1629580628305-9c871aa1a5e7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Vi1OZWNrJTIwQ2FyZGlnYW4lMjBLbml0JTIwU3dlYXRlcnxlbnwwfHwwfHx8MA%3D%3D",  
+      "https://images.unsplash.com/photo-1629580626780-7fe7fb0523e9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Vi1OZWNrJTIwQ2FyZGlnYW4lMjBLbml0JTIwU3dlYXRlcnxlbnwwfHwwfHx8MA%3D%3D"
     ],
     "attributes": {
       "sizes": ["S", "M", "L"],
@@ -390,8 +390,8 @@ let clothes = [
     "category": "men's clothing",
     "description": "Soft brushed cotton flannel shirt featuring dual front button chief pockets.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1760124128502-66d9ceaa418b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8UGxhaWQlMjBGbGFubmVsJTIwQnV0dG9uLURvd258ZW58MHx8MHx8fDA%3D",  
+      "https://images.unsplash.com/photo-1760124128924-36b83caa2d93?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFBsYWlkJTIwRmxhbm5lbCUyMEJ1dHRvbi1Eb3dufGVufDB8fDB8fHww"  
     ],
     "attributes": {
       "sizes": ["M", "L", "XL", "XXL"],
@@ -408,8 +408,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Flirty summer mini dress patterned with tiered ruffles and elastic smocked waist.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1785348056820-7af9bebdf967?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFRpZXJlZCUyMFJ1ZmZsZSUyME1pbmklMjBEcmVzc3xlbnwwfHwwfHx8MA%3D%3D",  
+      "https://images.unsplash.com/photo-1781496266499-a4516f159c10?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFRpZXJlZCUyMFJ1ZmZsZSUyME1pbmklMjBEcmVzc3xlbnwwfHwwfHx8MA%3D%3D"    
     ],
     "attributes": {
       "sizes": ["XS", "S", "M"],
@@ -426,8 +426,8 @@ let clothes = [
     "category": "unisex",
     "description": "Nautical-inspired heavy cotton shirt detailed with horizontal sailor stripes.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1594792677409-2f705f8b7abe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8QnJldG9uJTIwU3RyaXBlZCUyMExvbmclMjBTbGVldmUlMjBUZWV8ZW58MHx8MHx8fDA%3D",  
+      "https://images.unsplash.com/photo-1594792721936-d01c6f6f8ae1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QnJldG9uJTIwU3RyaXBlZCUyMExvbmclMjBTbGVldmUlMjBUZWV8ZW58MHx8MHx8fDA%3D"    
     ],
     "attributes": {
       "sizes": ["S", "M", "L"],
@@ -444,8 +444,8 @@ let clothes = [
     "category": "unisex",
     "description": "Thick down-alternative insulated winter coat featuring a detachable faux-fur hood zipper.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://plus.unsplash.com/premium_photo-1764091967752-88900d7d5ac6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fFdhdGVycHJvb2YlMjBQdWZmZXIlMjBXaW50ZXIlMjBDb2F0fGVufDB8fDB8fHww",  
+      "https://plus.unsplash.com/premium_photo-1764091971855-f3bd5cea3010?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8V2F0ZXJwcm9vZiUyMFB1ZmZlciUyMFdpbnRlciUyMENvYXR8ZW58MHx8MHx8fDA%3D"    
     ],
     "attributes": {
       "sizes": ["M", "L", "XL", "XXL"],
@@ -462,8 +462,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Sophisticated office-ready silk blouse structured with a classic pussy-bow neck tie line.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1780308968887-a916a27bdd56?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8UG9sa2ElMjBEb3QlMjBTaWxrJTIwQmxvdXNlfGVufDB8fDB8fHww",  
+      "https://images.unsplash.com/photo-1780308968819-aec79ebae442?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UG9sa2ElMjBEb3QlMjBTaWxrJTIwQmxvdXNlfGVufDB8fDB8fHww"
     ],
     "attributes": {
       "sizes": ["S", "M", "L"],
@@ -480,8 +480,8 @@ let clothes = [
     "category": "men's clothing",
     "description": "Streetwear tapered track pants built with zipper ankles and side seam stripes.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1715532098035-a343b26eaeaa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UHJlbWl1bSUyMFRyYWNrJTIwUGFudHN8ZW58MHx8MHx8fDA%3D",  
+      "https://plus.unsplash.com/premium_photo-1692243070517-3aa648a72870?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UHJlbWl1bSUyMFRyYWNrJTIwUGFudHN8ZW58MHx8MHx8fDA%3D"  
     ],
     "attributes": {
       "sizes": ["S", "M", "L"],
@@ -498,8 +498,8 @@ let clothes = [
     "category": "women's clothing",
     "description": "Pleated athletic mini skirt sporting built-in compression shorts and ball pocket spaces.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://plus.unsplash.com/premium_photo-1671586882634-dd6e99491d9e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8QXRobGV0aWMlMjBUZW5uaXMlMjBTa2lydHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1671586881819-b951c697e508?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEF0aGxldGljJTIwVGVubmlzJTIwU2tpcnR8ZW58MHx8MHx8fDA%3D"  
     ],
     "attributes": {
       "sizes": ["XS", "S", "M"],
