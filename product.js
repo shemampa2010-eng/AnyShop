@@ -1,14 +1,14 @@
-let storedClothes = localStorage.getItem("clothes");
-if (storedClothes) {
-    clothes = JSON.parse(storedClothes);
-}
-
 let urlInfo = new URLSearchParams(window.location.search);
 let id = urlInfo.get("id");
 
-let product = clothes.find(function(product) {
-    return product.id == id;
+let product = clothes.find(function(p) {
+    return p.id == id;
 });
+
+if (!product) {
+    document.getElementById("product").innerHTML = "<h2>Produit introuvable</h2>";
+    throw new Error("Produit non trouvé");
+}
 
 let productContainer = document.getElementById("product");
 

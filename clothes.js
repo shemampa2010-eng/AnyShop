@@ -624,8 +624,8 @@ let clothes = [
     "category": "unisex",
     "description": "Chunky loose-thread casual vintage style pullover perfect for cold days.",
     "images": [
-        "https://images.unsplash.com/photo-1785158377528-d8cbd55a991e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW5zJTIwcmliYmVkJTIwc3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
-        "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGluZW4lMjBtaWRpJTIwZHJlc3MlMjBmYXNoaW9ufGVufDB8fDB8fHww"
+      "https://images.unsplash.com/photo-1745724014371-95d6f73499dc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8T3ZlcnNpemVkJTIwS25pdCUyMENyZXduZWNrJTIwU3dlYXRlcnxlbnwwfHwwfHx8MA%3D%3D",  
+      "https://images.unsplash.com/photo-1784385411359-6bbb1532f6d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=https://images.unsplash.com/photo-1771477126784-19e5372cea62?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8T3ZlcnNpemVkJTIwS25pdCUyMENyZXduZWNrJTIwU3dlYXRlcnxlbnwwfHwwfHx8MA%3D%3D"
     ],
     "attributes": {
       "sizes": ["S", "M", "L", "XL"],

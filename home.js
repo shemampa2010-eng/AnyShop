@@ -123,9 +123,14 @@ function displayProducts(products) {
         }
 
         if (selectSize){
-             selectSize.addEventListener("click", function(event){
+            selectSize.addEventListener("click", function(event){
                 event.stopPropagation()
-            })
+            });
+            
+            selectSize.addEventListener("change", function(event) {
+                event.stopPropagation();
+            });
+
         }
 
 
