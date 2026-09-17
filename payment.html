@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paiement - E-commerce</title>
+    <title>Paiement - AnyShop Store</title>
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment.css">
 </head>
 <body>
     <div id="head"></div>
@@ -23,21 +23,21 @@
                 <h3>Vos coordonnées</h3>
                 
                 <p>
-                    <label>Nom complet :</label><br>
-                    <input type="text" id="name" required style="width: 100%; padding: 8px;">
+                    <label for="name">Nom complet :</label><br>
+                    <input type="text" id="name" required style="width: 100%; padding: 8px; box-sizing: border-box;">
                 </p>
                 <p>
-                    <label>Email :</label><br>
-                    <input type="email" id="email" required style="width: 100%; padding: 8px;">
+                    <label for="email">Email :</label><br>
+                    <input type="email" id="email" required style="width: 100%; padding: 8px; box-sizing: border-box;">
                 </p>
                 <p>
-                    <label>Adresse de livraison :</label><br>
-                    <input type="text" id="address" required style="width: 100%; padding: 8px;">
+                    <label for="address">Adresse de livraison :</label><br>
+                    <input type="text" id="address" required style="width: 100%; padding: 8px; box-sizing: border-box;">
                 </p>
                 
                 <h3>Paiement simulé</h3>
                 <p>
-                    <select id="paymentMethod" style="width: 100%; padding: 8px;">
+                    <select id="paymentMethod" style="width: 100%; padding: 8px; box-sizing: border-box;">
                         <option value="card">Carte bancaire (Simulé)</option>
                         <option value="paypal">PayPal (Simulé)</option>
                     </select>
@@ -48,7 +48,7 @@
                 </button>
             </form>
 
-            <div style="flex: 1; min-width: 250px; background: #f9f9f9; padding: 20px; border-radius: 8px;">
+            <div style="flex: 1; min-width: 250px; background: #f9f9f9; padding: 20px; border-radius: 8px; align-self: flex-start;">
                 <h3>Résumé</h3>
                 <div id="orderSummary"></div>
                 <hr>
@@ -60,8 +60,13 @@
         </div>
     </main>
 
-    <script src="clothes.js"></script>
+    <!-- Conteneur du footer -->
+    <footer id="footer"></footer>
+
+    <!-- Scripts JS chargés proprement -->
+    <script src="clothes.js" defer></script>
     <script src="nav.js" defer></script>
-    <script src="payment.js"></script>
+    <script src="payment.js" defer></script>
+    <script src="footer.js" defer></script>
 </body>
 </html>

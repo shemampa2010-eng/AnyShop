@@ -74,7 +74,7 @@ if (totalContainer) {
 
     if(cart.length > 0) {
         totalContainer.innerHTML += `
-            <div>
+            <div class= "checkout">
                 <a href="payment.html">
                     Proceed to Checkout
                 </a>

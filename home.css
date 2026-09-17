@@ -1,7 +1,15 @@
+/* 1. Configuration de la hauteur globale */
+html {
+    height: 100%;
+}
+
 body {
-    background: linear-gradient(#fff, rgb(27, 26, 26));
+    background: linear-gradient(#d6d4d4, rgb(131, 130, 130));
     min-height: 100vh;
     margin: 0;
+    /* Transformation en conteneur Flexbox vertical */
+    display: flex;
+    flex-direction: column;
 }
 
 #head {
@@ -31,9 +39,7 @@ img {
 
 .product {
     width: 200px;
-
     padding: 10px;
-
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -42,7 +48,6 @@ img {
 .product-image {
     width: 100%;
     height: 250px;
-
     object-fit: cover;
 }
 
@@ -56,12 +61,11 @@ img {
     font-weight: bold;
 }
 
+/* 2. Le footer est maintenant poussé tout en bas */
 footer {
-    margin-top: 40px;
+    margin-top: auto;
     padding: 20px;
-
     text-align: center;
-
     background-color: rgb(120, 116, 116);
     border-top: 1px solid #ddd;
 }
@@ -140,5 +144,10 @@ footer {
 
     .product h2 {
         font-size: 14px;
+    }
+
+    /* Optionnel : Ajuste le bouton de tri sur mobile pour éviter les débordements */
+    #sort {
+        margin-left: 0;
     }
 }
