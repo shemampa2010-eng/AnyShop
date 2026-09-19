@@ -3,7 +3,6 @@ html, body {
     background-color: #f3f3f1;
     font-family: Arial, sans-serif;
     color: #222;
-    /* 1. On applique la hauteur minimale sur le viewport */
     min-height: 100vh;
 }
 
@@ -91,7 +90,7 @@ h1 {
 }
 
 footer {
-    margin-top: auto;
+    margin-top: 10px;
     padding: 20px;
     text-align: center;
     background-color: rgb(120, 116, 116);
