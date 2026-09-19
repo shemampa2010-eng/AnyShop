@@ -10,6 +10,7 @@ body {
     /* Transformation en conteneur Flexbox vertical */
     display: flex;
     flex-direction: column;
+    background-attachment: fixed;
 }
 
 #head {
