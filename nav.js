@@ -1,9 +1,12 @@
 let head = document.getElementById("head");
 
-head.innerHTML = `
+const newLocal = head.innerHTML = `
+    <img src="logo.jpeg" alt="logo" id="navLogo">
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle"></label>
+
     <nav id="mainNav">
-        <img src="logo.jpeg" alt="logo" id="navLogo">
-        <a href="home.html" class="nav-start">Home</a>
+        <a href="home.html">Home</a>
         <a href="home.html?category=women">Femme</a>
         <a href="home.html?category=men">Homme</a>
         <a href="home.html?category=unisex">Unisex</a>

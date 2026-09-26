@@ -83,6 +83,10 @@ img {
     border-radius: 10px;
     box-sizing: border-box;
 }
+.add-to-cart.btn {
+    color: white;
+    background-color: black;
+}
 
 .product-image {
     width: 100%;
@@ -113,19 +117,60 @@ footer {
     border-top: 1px solid #ddd;
 }
 
+#burger-toggle{
+    display: none;
+}
+
+#head label {
+  display: none
+}
+
 @media (max-width: 600px) {
 
-    body {
-        padding: 0 10px;
-    }
-
     #head {
-        flex-direction: column;
-        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
     }
 
-    nav {
+    #head label {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        width: 30px;
+        height: 30px;
+    }
+
+    #head label::before {
+        position: absolute;
+        content: "menu";
+        font-family: "Material Icons";
+        font-size: 28px;
+        color: #000;
+        top: 0;
+        left: 0;
+    }
+
+    /* Ajustement du menu nav */
+    #head nav {
+        display: none !important;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
         gap: 15px;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+    
+    #burger-toggle:checked ~ nav {
+        display: flex !important;
+    }
+
+    #burger-toggle:checked ~ label::before {
+        content: "close";
     }
 
     .toolbar {
