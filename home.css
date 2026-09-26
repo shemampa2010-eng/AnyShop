@@ -14,11 +14,14 @@ body {
 
 #head {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 0px;
+    flex-direction: row;
     background-color: white;
-    margin-bottom: 25px;
+    justify-content: space-between;
+    
+}
+
+#head nav {
+    width: fit-content;
 }
 
 #head h1 {
@@ -30,41 +33,13 @@ img {
     width: 60px;
 }
 
-#range {
-    width: 110px;
-    height: 32px;
-    margin-left: 88%;
-    margin-bottom: 10px;
+
+.filter {
+    width: 100%;
+    display: block;
+
 }
 
-#search {
-    width: 200px;
-    height: 32px;
-    margin-left: 81%;
-    margin-bottom: 5px;
-}
-
-#search, #range, #sort {
-    padding: 0 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px; /* Bords légèrement arrondis */
-    background-color: #ffffff;
-    font-size: 13px;
-    color: #333;
-    outline: none;
-    box-sizing: border-box;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Petite ombre légère */
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-#sort {
-    width: 110px;
-    height: 32px;
-    margin-left: 88%; 
-    margin-right: 10px;
-    margin-bottom: 5px; 
-    cursor: pointer;
-}
 
 #products {
     width: 90%;
@@ -125,7 +100,11 @@ footer {
   display: none
 }
 
+
+
 @media (max-width: 600px) {
+
+
 
     #head {
         display: flex;
@@ -164,7 +143,7 @@ footer {
         padding-top: 15px;
         border-top: 1px solid #eee;
     }
-    
+
     #burger-toggle:checked ~ nav {
         display: flex !important;
     }
@@ -192,4 +171,5 @@ footer {
     .product h2 {
         font-size: 14px;
     }
+    
 }

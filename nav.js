@@ -1,7 +1,7 @@
 let head = document.getElementById("head");
 
 const newLocal = head.innerHTML = `
-    <img src="logo.jpeg" alt="logo" id="navLogo">
+    <div class="logo"><img src="logo.jpeg" alt="logo" id="navLogo"></div>
     <input type="checkbox" id="burger-toggle">
     <label for="burger-toggle"></label>
 
