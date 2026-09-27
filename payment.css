@@ -1,3 +1,42 @@
+
+/* Masque la checkbox partout */
+#burger-toggle {
+    display: none;
+}
+
+/* Masque le bouton burger sur PC */
+#head label {
+    display: none;
+}
+
+/* Mobile : bascule d'affichage */
+@media (max-width: 600px) {
+
+    #head label {
+        display: block;
+        cursor: pointer;
+    }
+
+    #head label::before {
+        content: "menu";
+        font-family: "Material Icons";
+    }
+
+    #head nav#mainNav {
+        display: none;
+        width: 100%;
+    }
+
+    #burger-toggle:checked ~ nav#mainNav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #burger-toggle:checked ~ label::before {
+        content: "close";
+    }
+}
+
 footer {
     margin-top: auto;
     padding: 2% 0;
@@ -14,19 +53,10 @@ footer {
         margin: 5% auto !important;
     }
 
-    #checkoutForm, 
-    main > div > div {
-        width: 100% !important;
-        min-width: 100% !important;
-        box-sizing: border-box;
-    }
-
-
     h1 {
         font-size: 1.5rem;
         text-align: center;
     }
-
 
     #Payer {
         width: 100% !important;

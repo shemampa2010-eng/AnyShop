@@ -134,7 +134,27 @@ footer {
 /* ==========================================
    5. ADAPTATION MOBILE (< 700px)
    ========================================== */
-@media (max-width: 600px) {
+@media (max-width: 712px) {
+
+    .cart-product {
+        flex-direction: column; /* Bascule tout en colonne */
+        align-items: center;
+        text-align: center;
+    }
+
+    .cart-product img {
+        width: 150px;
+        height: 180px;
+    }
+
+    /* Évite que les groupes de boutons ou sélecteurs ne débordent */
+    .cart-product > div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
 
     #head {
         flex-wrap: wrap;

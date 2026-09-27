@@ -67,7 +67,6 @@ html, body {
     margin-bottom: 20px;
 }
 
-/* Style très basique pour les champs de filtre */
 #search, #range, #sort {
     padding: 8px 12px;
     border: 1px solid #ccc;
@@ -84,10 +83,6 @@ html, body {
 }
 
 
-/* ==========================================
-   2. NAVIGATION MOBILE (Écrans < 600px)
-   ========================================== */
-
 @media (max-width: 600px) {
 
     #head {
@@ -95,7 +90,7 @@ html, body {
         padding: 10px 15px;
     }
 
-    /* Affichage du bouton burger */
+    
     #head label {
         display: block;
         cursor: pointer;
@@ -115,29 +110,23 @@ html, body {
         left: 0;
     }
 
-    /* Masquer le nav par défaut au chargement */
-    #head nav#mainNav {
-        display: none;
-        width: 100%;
+    /* 1. Masquer la checkbox invisible partout */
+    #burger-toggle { 
+        display: none; 
+    }
+
+    /* 2. Sur mobile : cacher le nav par défaut */
+    @media (max-width: 600px) {
+        #head nav#mainNav {
+            display: none !important;
+            width: 100%;
+        }
+
+    /* 3. Au clic sur le burger : afficher le nav */
+    #burger-toggle:checked ~ nav#mainNav {
+        display: flex !important;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        margin-top: 15px;
-        padding: 15px 0 5px 0;
     }
-
-    /* Réinitialisation de la marge du premier lien sur mobile */
-    #head nav a.nav-start {
-        margin-left: 0;
-    }
-
-    /* Afficher le nav quand la case est cochée */
-    #burger-toggle:checked ~ nav#mainNav {
-        display: flex;
-    }
-
-    /* Changer l'icône en 'X' quand la case est cochée */
-    #burger-toggle:checked ~ label::before {
-        content: "close";
-    }
+}
 }
