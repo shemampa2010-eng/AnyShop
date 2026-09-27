@@ -1,40 +1,143 @@
+/* ==========================================
+   1. NAVIGATION DESKTOP (Grand écran)
+   ========================================== */
+
+/* Réinitialisation de base */
 html, body {
     margin: 0;
     padding: 0;
 }
 
-#head, #mainNav {
+/* En-tête principal */
+#head {
     width: 100%;
     box-sizing: border-box;
-}
-
-#mainNav {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 10px 20px;
-    background-color: #ffffff; 
-    font-weight: 700;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Logo */
 #navLogo {
-    height: 65px;
+    height: 55px;
     width: auto;
 }
 
-.nav-start {
-    margin-left: auto;
+/* Menu de navigation PC */
+#mainNav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 600;
 }
-
 
 #mainNav a {
     text-decoration: none;
-    color: #000000; 
-    font-weight: 500;
+    color: #111111;
+    font-size: 15px;
     transition: color 0.2s ease;
 }
 
 #mainNav a:hover {
-    color: #777777; 
+    color: #777777;
 }
 
+/* Style du bouton Panier */
+#mainNav a.cart {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease;
+}
+
+#mainNav a.cart:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style très basique pour les champs de filtre */
+#search, #range, #sort {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Bords arrondis */
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Masquer la case à cocher et l'icône burger sur PC */
+#burger-toggle,
+#head label {
+    display: none;
+}
+
+
+/* ==========================================
+   2. NAVIGATION MOBILE (Écrans < 600px)
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    #head {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    /* Affichage du bouton burger */
+    #head label {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Icône Burger (Material Icons) */
+    #head label::before {
+        position: absolute;
+        content: "menu";
+        font-family: "Material Icons";
+        font-size: 30px;
+        color: #000000;
+        top: 0;
+        left: 0;
+    }
+
+    /* Masquer le nav par défaut au chargement */
+    #head nav#mainNav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+        padding: 15px 0 5px 0;
+    }
+
+    /* Réinitialisation de la marge du premier lien sur mobile */
+    #head nav a.nav-start {
+        margin-left: 0;
+    }
+
+    /* Afficher le nav quand la case est cochée */
+    #burger-toggle:checked ~ nav#mainNav {
+        display: flex;
+    }
+
+    /* Changer l'icône en 'X' quand la case est cochée */
+    #burger-toggle:checked ~ label::before {
+        content: "close";
+    }
+}
