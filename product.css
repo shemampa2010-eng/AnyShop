@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     background-color: #f3f3f1;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #222;
     min-height: 100vh;
     display: flex;
