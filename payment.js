@@ -47,6 +47,7 @@ checkoutForm.addEventListener("click", function(event){
     <h2>Paiement réussi ! 🎉</h2>`;
     localStorage.removeItem("cart");
     setTimeout(function() {
-        location.reload();
+        window.location.href = "home.html"
     }, 2000);
+
 });
