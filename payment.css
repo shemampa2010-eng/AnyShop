@@ -1,5 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
-/* Masque la checkbox partout */
 #burger-toggle {
     display: none;
 }
@@ -44,6 +46,7 @@ footer {
     background-color: rgb(120, 116, 116);
     border-top: 1px solid #ddd;
 }
+
 
 @media (max-width: 768px) {
 

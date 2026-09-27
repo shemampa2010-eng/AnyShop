@@ -48,6 +48,6 @@ checkoutForm.addEventListener("click", function(event){
     localStorage.removeItem("cart");
     setTimeout(function() {
         window.location.href = "home.html"
-    }, 2000);
+    }, 1500);
 
 });
